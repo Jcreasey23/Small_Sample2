@@ -1,6 +1,6 @@
-### Computer Science Final Project Proposal ###
+# Computer Science Final Project Proposal #
 ## What Effect Does Weather Have on Crime in Major Cities? ##
-## Josh Creasey, Tianna Mitzel, Angel Ainembabazi ##
+### Josh Creasey, Tianna Mitzel, Angel Ainembabazi ###
 
 
 # Draft purpose of our project: Provide data that helps people decide on where to move depending on the information shared about each of these cities.#
@@ -9,7 +9,7 @@
 (how you will begin to approach the problem and anticipated challenges)
 In our project, we hope to analyze crime data from four large cities in the United States as well as two smaller ones. (Larger than _ population, smaller than _ population.) We will look at three major crimes: murder, grand theft auto, and robbery, as well as three minor crimes: theft, vandalism, and trespassing. We hope to compare the effect of the average monthly temperature to the crime rates for each individual crime in various large and small cities. Finally, we hope to be able to predict when crime spikes in the cities we choose to study.
 
-# Approaching the problem:#
+# Approaching the problem: #
 Select four big and two small cities to observe crime data for month by month
 Find crime data for various cities by month
 Choose crimes to compare
@@ -72,8 +72,8 @@ Int getnumTres();       Returns number of trespassing cases
 
 Possibly crime acts as child class of each city
 
-## Possible Data to be used: ##
-# Big cities #
+# Possible Data to be used: #
+## Big cities ##
 * Seattle, Washington
 https://data.seattle.gov/Public-Safety/Crime-Data/7qe4-t837 - Seattle Crime from 2008- Present
 https://data.seattle.gov/d/7qe4-t837/visualization
@@ -97,7 +97,7 @@ All Crime : https://data.cityofchicago.org/d/qzdf-xmn8/visualization
 
 
 
-# Smaller Cities #
+## Smaller Cities ##
 * Boulder, Colorado
 Crime: violent crime
 https://open-data.bouldercolorado.gov/datasets/8ef054b1a3ca4ac496d75ec28f17a117_0/explore?filters=eyJSZXBvcnRfTW9udGhfTnVtIjpbMSwxMl19&location=40.050181%2C-105.204251%2C11.00&showTable=true
