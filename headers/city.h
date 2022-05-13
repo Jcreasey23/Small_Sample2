@@ -1,25 +1,24 @@
 // City Header file
+#ifndef CITY_H
+#define CITY_H
 #include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
 
-class City
-{
-private:
+class City{
+    private:
+    //Stuff
 
-//Stuff
-
-public:
-
-//Stuff
+    public:
+    //Stuff
 
 
 ////////////////////////////////////////////
 // Class functions
 ////////////////////////////////////////////
-
-
-//Stuff
+    
+    //Stuff
 
 };
+#endif
