@@ -19,6 +19,7 @@ int main(){
     int numMurder; //murder in a given month
     int numTheft; //theft in a given month
     int numVandalism; //trespassing in a given month
+    //int getNumTres(); //returns the number of trespassing cases
     
     data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
     cout << cityName << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;

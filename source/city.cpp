@@ -19,9 +19,10 @@ City::City(){
     numMurder = 0;
     numTheft = 0;
     numVandalism = 0;
+    //numTres = 0;
 }
 
-City::City(string newCityName, int newAvgTemp, int newCityPop, int newNumRobbery, int newNumGtA, int newNumMurder, int newNumTheft, int newNumVand){
+City::City(string newCityName, int newAvgTemp, int newCityPop, int newNumRobbery, int newNumGtA, int newNumMurder, int newNumTheft, int newNumVand, int newNumTres){
     cityName = newCityName;
     avgTemp = newAvgTemp;
     cityPop = newCityPop;
@@ -30,6 +31,7 @@ City::City(string newCityName, int newAvgTemp, int newCityPop, int newNumRobbery
     numMurder = newNumMurder;
     numTheft = newNumTheft;
     numVandalism = newNumVand;
+    //numTres = newNumTres;
 }
 
 string City::getCityName(){
@@ -56,8 +58,8 @@ int City::getNumVand(){
     return numVandalism;
 }
 
-int City::getNumTres(){
-    return getNumTres;
-}
+// int City::getNumTres(){
+//     return numTres;
+// }
 
 //void City::print();
