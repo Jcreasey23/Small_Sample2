@@ -12,7 +12,7 @@ class City{
     int avgTemp; //Average temperature of the city in a given month
     int cityPop; //population of the city
     int numRobbery; //robberies in a given month
-    int gta; //grand theft auto in a given month
+    int gTa; //grand theft auto in a given month
     int numMurder; //murder in a given month
     int numTheft; //theft in a given month
     int numVandalism; //trespassing in a given month
@@ -24,6 +24,8 @@ class City{
 ////////////////////////////////////////////
     
     public:
+        City(); 
+        City(string newCityName, int newAvgTemp, int newCityPop, int newNumRobbery, int newGtA, int newNumMurder, int newNumTheft, int newNumVand);
         string getCityName(); //returns city name
         int getCityPop();//returns city population
         int getNumRobbery();//returns the number of robbery cases
