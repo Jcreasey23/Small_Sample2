@@ -10,6 +10,8 @@
 using namespace std;
 
 int main(){
+    //create objects
+    //2d array of city with pop and crimes?
     ifstream data("Austin.txt");
     string cityName; //name of city being observed
     int avgTemp; //Average temperature of the city in a given month
