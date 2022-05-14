@@ -47,7 +47,7 @@ int City::getNumGtA(){
 }
 
 int City::getNumMurder(){
-    return numGtA;
+    return numMurder;
 }
 
 int City::getNumTheft(){
