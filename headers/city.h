@@ -18,23 +18,21 @@ class City{
     int numVandalism; //trespassing in a given month
     //string crimes[6] = {"Murder", "Robbery", "grand theft auto", "theft", "Vandalism", "Trespassing"};
 
-    public:
-    string getCityName(); //returns city name
-    int getCityPop();//returns city population
-    int getNumRobbery();//returns the number of robbery cases
-    int getGtA();//returns the number of grand theft auto cases
-    int getNumMurder(); //returns the number of murder cases
-    int getNumTheft(); //returns the number of theft cases
-    int getNumVand(); //returns the number of vandalism cases
-    int getNumTres(); //returns the number of trespassing cases
-    void print(); 
-
-
+    
 ////////////////////////////////////////////
 // Class functions
 ////////////////////////////////////////////
     
-    //Stuff
+    public:
+        string getCityName(); //returns city name
+        int getCityPop();//returns city population
+        int getNumRobbery();//returns the number of robbery cases
+        int getGtA();//returns the number of grand theft auto cases
+        int getNumMurder(); //returns the number of murder cases
+        int getNumTheft(); //returns the number of theft cases
+        int getNumVand(); //returns the number of vandalism cases
+        int getNumTres(); //returns the number of trespassing cases
+        void print(); 
 
 };
 #endif
