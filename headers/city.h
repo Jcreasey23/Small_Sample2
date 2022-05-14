@@ -32,7 +32,7 @@ class City{
         int getNumTheft(); //returns the number of theft cases
         int getNumVand(); //returns the number of vandalism cases
         int getNumTres(); //returns the number of trespassing cases
-        void print(); 
+        void print(); //print each city with weather temp and crimes respectively
 
 };
 #endif
