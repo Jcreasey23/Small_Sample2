@@ -1,14 +1,14 @@
-January 33 108 94 896 57
-Februray 35 80 99 865 49
-March 42 84 99 748 30
-April 53 71 82 492 3
-May 63 93 159 711 26
-June 72 81 76 439 4
-July 77 103 61 523 11
-August 76 109 106 695 5
-September 69 124 117 623 11
-October 58 119 97 726 23
-November 48 92 124 570 18
-December 39 126 113 660 26
+January     33 108 94 896 57
+Februray    35 80 99 865 49
+March       42 84 99 748 30
+April       53 71 82 492 3
+May         63 93 159 711 26
+June        72 81 76 439 4
+July        77 103 61 523 11
+August      76 109 106 695 5
+September   69 124 117 623 11
+October     58 119 97 726 23
+November    48 92 124 570 18
+December    39 126 113 660 26
 
 Month Temp Murder GTA Robbery Theft

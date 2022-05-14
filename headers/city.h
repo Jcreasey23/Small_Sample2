@@ -12,16 +12,17 @@ class City{
     int avgTemp; //Average temperature of the city in a given month
     int cityPop; //population of the city
     int numRobbery; //robberies in a given month
-    int numGtA; //grand theft auto in a given month
-    int numMurder; //murder in a given month
-    int numTheft; //theft in a given month
-    int numVandalism; //trespassing in a given month
-    //string crimes[6] = {"Murder", "Robbery", "grand theft auto", "theft", "Vandalism", "Trespassing"};
+    int numGtA; //grand theft auto cases in a given month
+    int numMurder; //murder cases in a given month
+    int numTheft; //theft cases in a given month
+    //int numTres; //trespassing cases in a given month
+    int numVandalism; //vandalism cases in a given month
 
+    //string city[12][7]; //create a template
     
     public:
         City(); 
-        City(string newCityName, int newAvgTemp, int newCityPop, int newNumRobbery, int newNumGtA, int newNumMurder, int newNumTheft, int newNumVand);
+        City(string newCityName, int newAvgTemp, int newCityPop, int newNumRobbery, int newNumGtA, int newNumMurder, int newNumTheft, int newNumVand, int newNumTres);
         string getCityName(); //returns city name
         int getCityPop();//returns city population
         int getNumRobbery();//returns the number of robbery cases
@@ -29,7 +30,7 @@ class City{
         int getNumMurder(); //returns the number of murder cases
         int getNumTheft(); //returns the number of theft cases
         int getNumVand(); //returns the number of vandalism cases
-        int getNumTres(); //returns the number of trespassing cases
+        //int getNumTres(); //returns the number of trespassing cases
         //void print(); //print each city with weather temp and crimes respectively
 
 };
