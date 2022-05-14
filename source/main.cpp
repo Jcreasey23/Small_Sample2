@@ -6,8 +6,23 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 using namespace std;
 
 int main(){
+    ifstream data("Austin.txt");
+    string cityName; //name of city being observed
+    int avgTemp; //Average temperature of the city in a given month
+    int cityPop; //population of the city
+    int numRobbery; //robberies in a given month
+    int numGtA; //grand theft auto in a given month
+    int numMurder; //murder in a given month
+    int numTheft; //theft in a given month
+    int numVandalism; //trespassing in a given month
+    
+    data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
+    cout << cityName << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;
+
+    data.close();
     return 0;
 }
