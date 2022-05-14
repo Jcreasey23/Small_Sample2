@@ -1,6 +1,6 @@
-# Computer Science Final Project Proposal #
-## What Effect Does Weather Have on Crime in Major Cities? ##
-### Josh Creasey, Tianna Mitzel, Angel Ainembabazi ###
+## Computer Science Final Project Proposal 
+## What Effect Does Weather Have on Crime in Major Cities? 
+## Josh Creasey, Tianna Mitzel, Angel Ainembabazi 
 
 
 # Draft purpose of our project: Provide data that helps people decide on where to move depending on the information shared about each of these cities.#
