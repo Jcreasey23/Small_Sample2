@@ -25,9 +25,9 @@ class City{
     int getGtA();//returns the number of grand theft auto cases
     int getNumMurder(); //returns the number of murder cases
     int getNumTheft(); //returns the number of theft cases
-    int getNumVand();
-    int getNumTres();
-    void print();
+    int getNumVand(); //returns the number of vandalism cases
+    int getNumTres(); //returns the number of trespassing cases
+    void print(); 
 
 
 ////////////////////////////////////////////
