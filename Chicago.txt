@@ -1,14 +1,14 @@
-January 27 36 668 725 4602
-Februray 30 38 1988 637 4177
-March 39 30 628 496 3531
-April 49 62 659 455 2505
-May 59 86 829 517 2916
-June 70 94 794 574 3079
-July 76 111 959 734 3668
-August 75 68 996 816 3882
-September 67 82 921 743 3620
-October 55 68 962 756 3423
-November 43 62 938 755 2960
-December 32 57 911 565 2916
+January     27 36 668 725 4602
+Februray    30 38 1988 637 4177
+March       39 30 628 496 3531
+April       49 62 659 455 2505
+May         59 86 829 517 2916
+June        70 94 794 574 3079
+July        76 111 959 734 3668
+August      75 68 996 816 3882
+September   67 82 921 743 3620
+October     55 68 962 756 3423
+November    43 62 938 755 2960
+December    32 57 911 565 2916
 
 Month Temp Murder GTA Robbery Theft Vand?
