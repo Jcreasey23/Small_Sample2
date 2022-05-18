@@ -10,21 +10,24 @@
 #include "city.h"
 using namespace std;
 
-const int austinPop = 50;
 void readFile(ifstream &openAus,vector<City> cityName);
 
 int main(){
     string cityName; //name of city being observed
     int avgTemp; //Average temperature of the city in a given month
-    //add individual population for eachcity
+    int cityPop; //population of the city
     int numRobbery; //robberies in a given month
     int numGtA; //grand theft auto in a given month
     int numMurder; //murder in a given month
     int numTheft; //theft in a given month
+    //int numVandalism; //trespassing in a given month
     string month;
     int counter = 0;
 
     ifstream openAus("Austin.txt");
+    // if(openAus.fail()){
+    //     cout << "file doesn't exist!" << endl;
+    // }
     vector<City> austin;
     cout << "Austin Data" << endl;
     readFile(openAus,austin);
@@ -53,21 +56,37 @@ int main(){
     vector<City> seattle;
     cout << "Seattle Data" << endl;
     readFile(openSea,seattle);
-    openSea.close();
+    opensea.close();
 
 
 
 // readFile(openBoul,boulder);
 // readFile(openCic,chicago);
 
-    
+    //data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
+    //cout <<  << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;
+
+    //openAus.close();
     return 0;
 }   // End of main
 
+// void readFile(ifstream &openAus, vector<City> cityName)
+// {
 
+//     //int month, avgTemp, numMurder, numGtA, numRobbery, numTheft;
+//     int counter = 0;
+//     while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
+//     {
+//         openAus >> getMonth() >> getAvgTemp() >> getNumMurder() >> getNumGta() >> numRobbery >> numTheft ;   // Reads one line from txt file
+//         cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   // Adds runner object to vector of runner objects
+//         cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  // Prints string of runner first name, last name, and pace per mile in seconds
+//         counter++;
+//     }
+// }
 
 void readFile(ifstream &openAus, vector<City> cityName)
 {
+
     string month; 
     int avgTemp, numMurder, numGtA, numRobbery, numTheft;
     int counter = 0;
