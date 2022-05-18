@@ -33,18 +33,27 @@ int main(){
     vector<City> boulder;
     cout << "Boulder Data" << endl;
     readFile(openBoul,boulder);
+    openBoul.close();
     ifstream openCic("Chicago.txt");
     vector<City> chicago;
+    cout << "Chicago Data" << endl;
     readFile(openCic,chicago);
+    openCic.close();
     ifstream openNew("NewYork.txt");
     vector<City> newyork;
+    cout << "New York Data" << endl;
     readFile(openNew,newyork);
+    openNew.close();
     ifstream openSac("Sacramento.txt");
     vector<City> sacramento;
+    cout << "Sacramento Data" << endl;
     readFile(openSac,sacramento);
+    openSac.close();
     ifstream openSea("Seattle.txt");
     vector<City> seattle;
+    cout << "Seattle Data" << endl;
     readFile(openSea,seattle);
+    openSea.close();
 
 
 
