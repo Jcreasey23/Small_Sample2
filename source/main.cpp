@@ -50,23 +50,11 @@ int main(){
     //data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
     //cout <<  << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;
 
-    //openAus.close();
+    
     return 0;
 }   // End of main
 
-// void readFile(ifstream &openAus, vector<City> cityName)
-// {
 
-//     //int month, avgTemp, numMurder, numGtA, numRobbery, numTheft;
-//     int counter = 0;
-//     while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
-//     {
-//         openAus >> getMonth() >> getAvgTemp() >> getNumMurder() >> getNumGta() >> numRobbery >> numTheft ;   // Reads one line from txt file
-//         cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   // Adds runner object to vector of runner objects
-//         cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  // Prints string of runner first name, last name, and pace per mile in seconds
-//         counter++;
-//     }
-// }
 
 void readFile(ifstream &openAus, vector<City> cityName)
 {
