@@ -10,24 +10,21 @@
 #include "city.h"
 using namespace std;
 
+const int austinPop = 50;
 void readFile(ifstream &openAus,vector<City> cityName);
 
 int main(){
     string cityName; //name of city being observed
     int avgTemp; //Average temperature of the city in a given month
-    int cityPop; //population of the city
+    //add individual population for eachcity
     int numRobbery; //robberies in a given month
     int numGtA; //grand theft auto in a given month
     int numMurder; //murder in a given month
     int numTheft; //theft in a given month
-    //int numVandalism; //trespassing in a given month
     string month;
     int counter = 0;
 
     ifstream openAus("Austin.txt");
-    // if(openAus.fail()){
-    //     cout << "file doesn't exist!" << endl;
-    // }
     vector<City> austin;
     cout << "Austin Data" << endl;
     readFile(openAus,austin);
@@ -54,9 +51,6 @@ int main(){
 // readFile(openBoul,boulder);
 // readFile(openCic,chicago);
 
-    //data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
-    //cout <<  << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;
-
     
     return 0;
 }   // End of main
@@ -65,7 +59,6 @@ int main(){
 
 void readFile(ifstream &openAus, vector<City> cityName)
 {
-
     string month; 
     int avgTemp, numMurder, numGtA, numRobbery, numTheft;
     int counter = 0;
