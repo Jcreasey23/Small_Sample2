@@ -45,7 +45,3 @@ int City::getNumTheft(){
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 807f9a4e2bcd23652c02a52ac1c82eb43bdac660

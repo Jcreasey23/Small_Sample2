@@ -54,18 +54,11 @@ int main(){
     cout << "Seattle Data" << endl;
     readFile(openSea,seattle);
     openSea.close();
-
-
-
-// readFile(openBoul,boulder);
-// readFile(openCic,chicago);
-
-    
-    return 0;
+ 
+return 0;
 }   // End of main
 
-
-
+//function header
 void readFile(ifstream &openAus, vector<City> cityName)
 {
     string month; 
