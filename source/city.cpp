@@ -13,33 +13,21 @@ using namespace std;
 City::City(){
     cityName = " ";
     avgTemp = 0;
-    //cityPop = 0;
     numRobbery = 0;
     numGtA = 0;
     numMurder = 0;
     numTheft = 0;
-    //numVandalism = 0;
-    //numTres = 0;
 }
 
 // Both city name and city population will be set as constant variables in main
-City::City( int newAvgTemp, int newNumMurder, int newNumGtA, int newNumRobbery, int newNumTheft){
-    //cityName = newCityName;
+City::City(int newAvgTemp, int newNumMurder, int newNumGtA, int newNumRobbery, int newNumTheft){
     avgTemp = newAvgTemp;
-    //cityPop = newCityPop;
     numRobbery = newNumRobbery;
     numGtA = newNumGtA;
     numMurder = newNumMurder;
     numTheft = newNumTheft;
-    //numVandalism = newNumVand;
-    //numTres = newNumTres;
 }
 
-/*
-string City::getCityName(){
-    return cityName;
-}
-*/
 int City::getNumRobbery(){
     return numRobbery;
 }
@@ -55,17 +43,9 @@ int City::getNumMurder(){
 int City::getNumTheft(){
     return numTheft;
 }
-/*
-int City::getNumVand(){
-    return numVandalism;
-}
-*/
-// int City::getNumTres(){
-//     return numTres;
-// }
 
-//void City::print();
 
+<<<<<<< HEAD
 // void City::readFile(ifstream &cityFile, vector<City> cityName)
 // {
 //     int counter = 0;
@@ -78,3 +58,6 @@ int City::getNumVand(){
 //         counter++;
 //     }
 // }
+=======
+
+>>>>>>> 6f73395721aedfae5a4497fcdd5160dd636ef368
