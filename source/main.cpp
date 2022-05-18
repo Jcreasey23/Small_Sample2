@@ -9,10 +9,9 @@
 #include <fstream>
 using namespace std;
 
+void readFile(ifstream &openAus,vector<City> cityName);
+
 int main(){
-    //create objects
-    //2d array of city with pop and crimes?
-    ifstream data("Austin.txt");
     string cityName; //name of city being observed
     int avgTemp; //Average temperature of the city in a given month
     int cityPop; //population of the city
@@ -21,11 +20,68 @@ int main(){
     int numMurder; //murder in a given month
     int numTheft; //theft in a given month
     int numVandalism; //trespassing in a given month
-    //int getNumTres(); //returns the number of trespassing cases
-    
-    data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
-    cout << cityName << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;
+    string month;
+    int counter = 0;
 
-    data.close();
+    ifstream openAus("Austin.txt");
+    // if(openAus.fail()){
+    //     cout << "file doesn't exist!" << endl;
+    // }
+    vector<City> austin;
+    readFile(openAus,austin);
+    openAus.close();
+//     ifstream openBoul("Boulder.txt");
+//     ifstream openCic("Chicago.txt");
+//     ifstream openNew("NewYork.txt");
+//     ifstream openSac("Sacramento.txt");
+//     ifstream openSea("Seattle.txt");
+    
+    
+// vector<City> boulder;
+// vector<City> chicago;
+// vector<City> newyork;
+// vector<City> sacramento;
+// vector<City> seattle;
+
+
+// readFile(openBoul,boulder);
+// readFile(openCic,chicago);
+
+    //data >> cityName >> avgTemp >> cityPop >> numRobbery >> numGtA >> numMurder >> numTheft >> numVandalism;
+    //cout <<  << " " << avgTemp << " " << cityPop << " " << numRobbery << " " << numTheft << " " << numVandalism << endl;
+
+    //openAus.close();
     return 0;
+}   // End of main
+
+// void readFile(ifstream &openAus, vector<City> cityName)
+// {
+
+//     //int month, avgTemp, numMurder, numGtA, numRobbery, numTheft;
+//     int counter = 0;
+//     while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
+//     {
+//         openAus >> getMonth() >> getAvgTemp() >> getNumMurder() >> getNumGta() >> numRobbery >> numTheft ;   // Reads one line from txt file
+//         cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   // Adds runner object to vector of runner objects
+//         cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  // Prints string of runner first name, last name, and pace per mile in seconds
+//         counter++;
+//     }
+// }
+
+void readFile(ifstream &openAus, vector<City> cityName)
+{
+
+    int month, avgTemp, numMurder, numGtA, numRobbery, numTheft;
+    int counter = 0;
+    while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
+    {
+        openAus >> month >> avgTemp >> numMurder >> numGtA >> numRobbery >> numTheft ;   // Reads one line from txt file
+        cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   // Adds runner object to vector of runner objects
+        cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  // Prints string of runner first name, last name, and pace per mile in seconds
+        counter++;
+    }
 }
+
+//issues with readfile function
+//could we possibly use a getline in main and print all lists? - Angel
+//get help with function?
