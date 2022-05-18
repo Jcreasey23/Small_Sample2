@@ -33,7 +33,7 @@ class City{
         int getNumVand(); //returns the number of vandalism cases
         //int getNumTres(); //returns the number of trespassing cases
         //void print(); //print each city with weather temp and crimes respectively
-        void readFile(ifstream &cityFile, vector<City> cityName);
+        //void readFile(ifstream &cityFile, vector<City> cityName);
 //         string getMonth();
 //         int getAvgTemp();
  };

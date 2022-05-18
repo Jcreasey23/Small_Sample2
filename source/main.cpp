@@ -2,11 +2,12 @@
 // Josh Creasey, Tianna Mitzel, Angel Ainembabazi
 // The Effects of Weather on Crime in Major Cities
 
-#include "city.h"
+
 #include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
+#include "city.h"
 using namespace std;
 
 void readFile(ifstream &openAus,vector<City> cityName);
@@ -19,7 +20,7 @@ int main(){
     int numGtA; //grand theft auto in a given month
     int numMurder; //murder in a given month
     int numTheft; //theft in a given month
-    int numVandalism; //trespassing in a given month
+    //int numVandalism; //trespassing in a given month
     string month;
     int counter = 0;
 
@@ -28,20 +29,26 @@ int main(){
     //     cout << "file doesn't exist!" << endl;
     // }
     vector<City> austin;
+    cout << "Austin Data" << endl;
     readFile(openAus,austin);
     openAus.close();
-//     ifstream openBoul("Boulder.txt");
-//     ifstream openCic("Chicago.txt");
-//     ifstream openNew("NewYork.txt");
-//     ifstream openSac("Sacramento.txt");
-//     ifstream openSea("Seattle.txt");
-    
-    
-// vector<City> boulder;
-// vector<City> chicago;
-// vector<City> newyork;
-// vector<City> sacramento;
-// vector<City> seattle;
+    ifstream openBoul("Boulder.txt");
+    vector<City> boulder;
+    cout << "Boulder Data" << endl;
+    readFile(openBoul,boulder);
+    ifstream openCic("Chicago.txt");
+    vector<City> chicago;
+    readFile(openCic,chicago);
+    ifstream openNew("NewYork.txt");
+    vector<City> newyork;
+    readFile(openNew,newyork);
+    ifstream openSac("Sacramento.txt");
+    vector<City> sacramento;
+    readFile(openSac,sacramento);
+    ifstream openSea("Seattle.txt");
+    vector<City> seattle;
+    readFile(openSea,seattle);
+
 
 
 // readFile(openBoul,boulder);
@@ -71,7 +78,8 @@ int main(){
 void readFile(ifstream &openAus, vector<City> cityName)
 {
 
-    int month, avgTemp, numMurder, numGtA, numRobbery, numTheft;
+    string month; 
+    int avgTemp, numMurder, numGtA, numRobbery, numTheft;
     int counter = 0;
     while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
     {
