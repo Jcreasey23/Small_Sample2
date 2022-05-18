@@ -11,4 +11,4 @@ October     55 68 962 756 3423
 November    43 62 938 755 2960
 December    32 57 911 565 2916
 
-Month Temp Murder GTA Robbery Theft Vand?
+Month Temp Murder GTA Robbery Theft 
