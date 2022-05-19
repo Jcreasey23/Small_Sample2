@@ -26,37 +26,57 @@ int main(){
 
     ifstream openAus("Austin.txt");
     vector<City> austin;
-    cout << "Austin Data" << endl;
+    cout << "-------------------" << endl;
+    cout << "AUSTIN, TX" << endl;
+    cout << "-------------------" << endl;
     readFile(openAus,austin);
     openAus.close();
+    cout << endl;
 
     ifstream openBoul("Boulder.txt");
     vector<City> boulder;
-    cout << "Boulder Data" << endl;
+    cout << "-------------------" << endl;
+    cout << "BOULDER, CO" << endl;
+    cout << "-------------------" << endl;
     readFile(openBoul,boulder);
     openBoul.close();
+    cout << endl;
 
+    
     ifstream openCic("Chicago.txt");
     vector<City> chicago;
-    cout << "Chicago Data" << endl;
+    cout << "-------------------" << endl;
+    cout << "CHICAGO, IL" << endl;
+    cout << "-------------------" << endl;
     readFile(openCic,chicago);
     openCic.close();
+    cout << endl;
 
     ifstream openNew("NewYork.txt");
     vector<City> newyork;
-    cout << "New York Data" << endl;
+    cout << "-------------------" << endl;
+    cout << "NEWYORK, NY" << endl;
+    cout << "-------------------" << endl;
     readFile(openNew,newyork);
     openNew.close();
+    cout << endl;
 
+    
     ifstream openSac("Sacramento.txt");
     vector<City> sacramento;
-    cout << "Sacramento Data" << endl;
+    cout << "-------------------" << endl;
+    cout << "SACRAMENTO, CA" << endl;
+    cout << "-------------------" << endl;
     readFile(openSac,sacramento);
     openSac.close();
+    cout << endl;
+
 
     ifstream openSea("Seattle.txt");
     vector<City> seattle;
-    cout << "Seattle Data" << endl;
+    cout << "-------------------" << endl;
+    cout << "SEATTLE, WA" << endl;
+    cout << "-------------------" << endl;
     readFile(openSea,seattle);
     openSea.close();
  
