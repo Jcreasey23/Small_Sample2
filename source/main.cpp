@@ -28,17 +28,18 @@ int main(){
     string month;
     int counter = 0;
 
+
     ifstream openAus("Austin.txt");
     vector<City> austin;
     cout << "-------------------" << endl;
     cout << "AUSTIN, TX" << endl;
     cout << "-------------------" << endl;
     readFile(openAus,austin);
-    sortbyMurder(austin);
-    for(int i = 0; i < 12; i++)
-    {
-        cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
-    }
+    // sortbyMurder(austin);
+    // for(int i = 0; i < 12; i++)
+    // {
+    //     cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
+    // }
     openAus.close();
     cout << endl;
 
@@ -55,52 +56,52 @@ int main(){
 
     // newAus.close();
 
-    // ifstream openBoul("Boulder.txt");
-    // vector<City> boulder;
-    // cout << "-------------------" << endl;
-    // cout << "BOULDER, CO" << endl;
-    // cout << "-------------------" << endl;
-    // readFile(openBoul,boulder);
-    // //openBoul.close();
-    // cout << endl;
+    ifstream openBoul("Boulder.txt");
+    vector<City> boulder;
+    cout << "-------------------" << endl;
+    cout << "BOULDER, CO" << endl;
+    cout << "-------------------" << endl;
+    readFile(openBoul,boulder);
+    openBoul.close();
+    cout << endl;
 
     
-    // ifstream openCic("Chicago.txt");
-    // vector<City> chicago;
-    // cout << "-------------------" << endl;
-    // cout << "CHICAGO, IL" << endl;
-    // cout << "-------------------" << endl;
-    // readFile(openCic,chicago);
-    // //openCic.close();
-    // cout << endl;
+    ifstream openCic("Chicago.txt");
+    vector<City> chicago;
+    cout << "-------------------" << endl;
+    cout << "CHICAGO, IL" << endl;
+    cout << "-------------------" << endl;
+    readFile(openCic,chicago);
+    openCic.close();
+    cout << endl;
 
-    // ifstream openNew("NewYork.txt");
-    // vector<City> newyork;
-    // cout << "-------------------" << endl;
-    // cout << "NEWYORK, NY" << endl;
-    // cout << "-------------------" << endl;
-    // readFile(openNew,newyork);
-    // //openNew.close();
-    // cout << endl;
+    ifstream openNew("NewYork.txt");
+    vector<City> newyork;
+    cout << "-------------------" << endl;
+    cout << "NEWYORK, NY" << endl;
+    cout << "-------------------" << endl;
+    readFile(openNew,newyork);
+    openNew.close();
+    cout << endl;
 
     
-    // ifstream openSac("Sacramento.txt");
-    // vector<City> sacramento;
-    // cout << "-------------------" << endl;
-    // cout << "SACRAMENTO, CA" << endl;
-    // cout << "-------------------" << endl;
-    // readFile(openSac,sacramento);
-    // //openSac.close();
-    // cout << endl;
+    ifstream openSac("Sacramento.txt"); //reads file
+    vector<City> sacramento; 
+    cout << "-------------------" << endl;
+    cout << "SACRAMENTO, CA" << endl;
+    cout << "-------------------" << endl;
+    readFile(openSac,sacramento);
+    openSac.close();
+    cout << endl;
 
-
-    // ifstream openSea("Seattle.txt");
-    // vector<City> seattle;
-    // cout << "-------------------" << endl;
-    // cout << "SEATTLE, WA" << endl;
-    // cout << "-------------------" << endl;
-    // readFile(openSea,seattle);
-    // //openSea.close();
+    
+    ifstream openSea("Seattle.txt");
+    vector<City> seattle;
+    cout << "-------------------" << endl;
+    cout << "SEATTLE, WA" << endl;
+    cout << "-------------------" << endl;
+    readFile(openSea,seattle);
+    openSea.close();
  
     
    //sortbyMurder(austin);
@@ -116,6 +117,7 @@ return 0;
 }   // End of main
 
 //function header
+//prints each files information to the terminal
 void readFile(ifstream &openAus, vector<City> cityName)
 {
 
@@ -131,7 +133,7 @@ void readFile(ifstream &openAus, vector<City> cityName)
     }
 }
 
-
+//sorts each city's data by crime - murder
 void sortbyMurder(vector<City> name)
 {
     // Format labels here for columns
@@ -158,6 +160,7 @@ void sortbyMurder(vector<City> name)
 
 }
 
+//prints 
 void printVec(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
