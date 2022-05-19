@@ -44,4 +44,7 @@ int City::getNumTheft(){
     return numTheft;
 }
 
-
+int City::getNumTemp()
+{
+    return avgTemp;
+}

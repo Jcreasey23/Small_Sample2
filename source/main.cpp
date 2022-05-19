@@ -12,6 +12,10 @@ using namespace std;
 
 void readFile(ifstream &openAus,vector<City> cityName);
 
+void sortbyMurder(vector<City> name);
+
+void printVec(vector<City> name);
+
 int main(){
     string cityName; //name of city being observed
     int avgTemp; //Average temperature of the city in a given month
@@ -60,6 +64,9 @@ int main(){
     readFile(openSea,seattle);
     openSea.close();
  
+    sortbyMurder(austin);
+    printVec(austin);
+
 return 0;
 }   // End of main
 
@@ -79,6 +86,37 @@ void readFile(ifstream &openAus, vector<City> cityName)
     }
 }
 
-//issues with readfile function
-//could we possibly use a getline in main and print all lists? - Angel
-//get help with function?
+
+void sortbyMurder(vector<City> name)
+{
+    // Format labels here for columns
+
+        for(int i = 0; i < name.size(); i++)
+    {
+        int curmin = name[i].getNumMurder();
+        int curminIndex = i;
+        for(int j = i + 1; j < name.size(); j++)
+        {
+            if(curmin > name[j].getNumMurder())
+            {
+                curmin = name[j].getNumMurder();
+                curminIndex = j;
+            }
+        }
+        // if(curminIndex != i)
+        // {
+        //     name[curminIndex] = name[i];
+        //     name[i].set_pace(curmin);
+        // }
+
+    }
+
+}
+
+void printVec(vector<City> name)
+{
+    for(int i = 0; i < name.size(); i++)
+    {
+        cout << name[i].getNumTemp() << " " << name[i].getNumMurder() << " " << name[i].getNumGtA() << " " << name[i].getNumRobbery() << " " << name[i].getNumTheft() << endl;
+    }
+}

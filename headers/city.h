@@ -24,6 +24,7 @@ class City{
         int getNumMurder(); //returns the number of murder cases
         int getNumTheft(); //returns the number of theft cases
         int getNumVand(); //returns the number of vandalism cases
+        int getNumTemp(); //returns the temperature for a month
 
 };
 #endif
