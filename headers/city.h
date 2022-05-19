@@ -27,7 +27,7 @@ class City{
         int getNumVand(); //returns the number of vandalism cases
         int getNumTemp(); //returns the temperature for a month
 
-        void set_Mur(int value);
+        int set_Mur(int value);
 
 };
 #endif

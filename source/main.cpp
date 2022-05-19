@@ -34,64 +34,83 @@ int main(){
     cout << "AUSTIN, TX" << endl;
     cout << "-------------------" << endl;
     readFile(openAus,austin);
-    openAus.close();
-    cout << endl;
-
-    ifstream openBoul("Boulder.txt");
-    vector<City> boulder;
-    cout << "-------------------" << endl;
-    cout << "BOULDER, CO" << endl;
-    cout << "-------------------" << endl;
-    readFile(openBoul,boulder);
-    openBoul.close();
-    cout << endl;
-
-    
-    ifstream openCic("Chicago.txt");
-    vector<City> chicago;
-    cout << "-------------------" << endl;
-    cout << "CHICAGO, IL" << endl;
-    cout << "-------------------" << endl;
-    readFile(openCic,chicago);
-    openCic.close();
-    cout << endl;
-
-    ifstream openNew("NewYork.txt");
-    vector<City> newyork;
-    cout << "-------------------" << endl;
-    cout << "NEWYORK, NY" << endl;
-    cout << "-------------------" << endl;
-    readFile(openNew,newyork);
-    openNew.close();
-    cout << endl;
-
-    
-    ifstream openSac("Sacramento.txt");
-    vector<City> sacramento;
-    cout << "-------------------" << endl;
-    cout << "SACRAMENTO, CA" << endl;
-    cout << "-------------------" << endl;
-    readFile(openSac,sacramento);
-    openSac.close();
-    cout << endl;
-
-
-    ifstream openSea("Seattle.txt");
-    vector<City> seattle;
-    cout << "-------------------" << endl;
-    cout << "SEATTLE, WA" << endl;
-    cout << "-------------------" << endl;
-    readFile(openSea,seattle);
-    openSea.close();
- 
     sortbyMurder(austin);
-    for(int i = 0; i < austin.size(); i++)
+    for(int i = 0; i < 12; i++)
     {
         cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
     }
-    vector<City> murSortAus;
-    murSortAus = austin;
-    printVec(murSortAus);
+    openAus.close();
+    cout << endl;
+
+    //sortbyMurder(austin);
+
+    // ofstream newAus;
+    // newAus.open("SortedAustinMurder.txt");
+    // for(int i = 0; i < 12; i++)
+    // {
+    //     newAus << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
+    // }
+
+    // //while()
+
+    // newAus.close();
+
+    // ifstream openBoul("Boulder.txt");
+    // vector<City> boulder;
+    // cout << "-------------------" << endl;
+    // cout << "BOULDER, CO" << endl;
+    // cout << "-------------------" << endl;
+    // readFile(openBoul,boulder);
+    // //openBoul.close();
+    // cout << endl;
+
+    
+    // ifstream openCic("Chicago.txt");
+    // vector<City> chicago;
+    // cout << "-------------------" << endl;
+    // cout << "CHICAGO, IL" << endl;
+    // cout << "-------------------" << endl;
+    // readFile(openCic,chicago);
+    // //openCic.close();
+    // cout << endl;
+
+    // ifstream openNew("NewYork.txt");
+    // vector<City> newyork;
+    // cout << "-------------------" << endl;
+    // cout << "NEWYORK, NY" << endl;
+    // cout << "-------------------" << endl;
+    // readFile(openNew,newyork);
+    // //openNew.close();
+    // cout << endl;
+
+    
+    // ifstream openSac("Sacramento.txt");
+    // vector<City> sacramento;
+    // cout << "-------------------" << endl;
+    // cout << "SACRAMENTO, CA" << endl;
+    // cout << "-------------------" << endl;
+    // readFile(openSac,sacramento);
+    // //openSac.close();
+    // cout << endl;
+
+
+    // ifstream openSea("Seattle.txt");
+    // vector<City> seattle;
+    // cout << "-------------------" << endl;
+    // cout << "SEATTLE, WA" << endl;
+    // cout << "-------------------" << endl;
+    // readFile(openSea,seattle);
+    // //openSea.close();
+ 
+    
+   //sortbyMurder(austin);
+    // for(int i = 0; i < 12; i++)
+    // {
+    //     cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
+    // }
+    // vector<City> murSortAus;
+    // murSortAus = austin;
+    // printVec(murSortAus);
 
 return 0;
 }   // End of main
@@ -106,8 +125,8 @@ void readFile(ifstream &openAus, vector<City> cityName)
     while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
     {
         openAus >> month >> avgTemp >> numMurder >> numGtA >> numRobbery >> numTheft ;   // Reads one line from txt file
-        cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   // Adds runner object to vector of runner objects
-        cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  // Prints string of runner first name, last name, and pace per mile in seconds
+        cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   
+        cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  
         counter++;
     }
 }
@@ -117,7 +136,7 @@ void sortbyMurder(vector<City> name)
 {
     // Format labels here for columns
 
-        for(int i = 0; i < name.size(); i++)
+    for(int i = 0; i < name.size(); i++)
     {
         int curmin = name[i].getNumMurder();
         int curminIndex = i;
