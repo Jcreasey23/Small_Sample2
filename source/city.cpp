@@ -11,7 +11,8 @@ using namespace std;
 ////////////////////////////////////////////
 
 City::City(){
-    cityName = " ";
+    //cityName = " ";
+    month = "__";
     avgTemp = 0;
     numRobbery = 0;
     numGtA = 0;
@@ -20,7 +21,8 @@ City::City(){
 }
 
 // Both city name and city population will be set as constant variables in main
-City::City(int newAvgTemp, int newNumMurder, int newNumGtA, int newNumRobbery, int newNumTheft){
+City::City(string mnth, int newAvgTemp, int newNumMurder, int newNumGtA, int newNumRobbery, int newNumTheft){
+    month = mnth;
     avgTemp = newAvgTemp;
     numRobbery = newNumRobbery;
     numGtA = newNumGtA;
@@ -47,6 +49,11 @@ int City::getNumTheft(){
 int City::getNumTemp()
 {
     return avgTemp;
+}
+
+string City::getMonth()
+{
+    return month;
 }
 
 int City :: set_Mur(int value)

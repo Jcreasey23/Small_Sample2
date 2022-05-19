@@ -34,13 +34,8 @@ int main(){
     cout << "AUSTIN, TX" << endl;
     cout << "-------------------" << endl;
     readFile(openAus,austin);
-    sortbyMurder(austin);
-    for(int i = 0; i < 12; i++)
-    {
-        cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
-    }
-    openAus.close();
-    cout << endl;
+
+
 
     //sortbyMurder(austin);
 
@@ -122,10 +117,10 @@ void readFile(ifstream &openAus, vector<City> cityName)
     string month; 
     int avgTemp, numMurder, numGtA, numRobbery, numTheft;
     int counter = 0;
-    while(counter < 12) // ** Problem ** Infinite loop as it reads the last line over again at the end of the file when using (!input.eof())
+    while(counter < 12)
     {
         openAus >> month >> avgTemp >> numMurder >> numGtA >> numRobbery >> numTheft ;   // Reads one line from txt file
-        cityName.push_back(City(avgTemp,numMurder,numGtA,numRobbery,numTheft));   
+        cityName.push_back(City(month,avgTemp,numMurder,numGtA,numRobbery,numTheft));   
         cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  
         counter++;
     }
@@ -134,8 +129,6 @@ void readFile(ifstream &openAus, vector<City> cityName)
 
 void sortbyMurder(vector<City> name)
 {
-    // Format labels here for columns
-
     for(int i = 0; i < name.size(); i++)
     {
         int curmin = name[i].getNumMurder();
@@ -157,7 +150,6 @@ void sortbyMurder(vector<City> name)
     }
 
 }
-
 void printVec(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
