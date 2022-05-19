@@ -48,3 +48,9 @@ int City::getNumTemp()
 {
     return avgTemp;
 }
+
+void City :: set_Mur(int value)
+{
+    numMurder = value;
+}
+

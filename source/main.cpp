@@ -123,11 +123,11 @@ void sortbyMurder(vector<City> name)
                 curminIndex = j;
             }
         }
-        // if(curminIndex != i)
-        // {
-        //     name[curminIndex] = name[i];
-        //     name[i].set_pace(curmin);
-        // }
+        if(curminIndex != i)
+        {
+            name[curminIndex] = name[i];
+            name[i].set_Mur(curmin);
+        }
 
     }
 

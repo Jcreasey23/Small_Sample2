@@ -19,12 +19,15 @@ class City{
     public:
         City(); 
         City(int newAvgTemp, int newNumMurder, int newNumGtA, int newNumRobbery, int newNumTheft);
+
         int getNumRobbery();//returns the number of robbery cases
         int getNumGtA();//returns the number of grand theft auto cases
         int getNumMurder(); //returns the number of murder cases
         int getNumTheft(); //returns the number of theft cases
         int getNumVand(); //returns the number of vandalism cases
         int getNumTemp(); //returns the temperature for a month
+
+        void set_Mur(int value);
 
 };
 #endif
