@@ -85,7 +85,13 @@ int main(){
     openSea.close();
  
     sortbyMurder(austin);
-    printVec(austin);
+    for(int i = 0; i < austin.size(); i++)
+    {
+        cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
+    }
+    vector<City> murSortAus;
+    murSortAus = austin;
+    printVec(murSortAus);
 
 return 0;
 }   // End of main
