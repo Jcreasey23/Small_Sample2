@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip>
 #include <fstream>
 #include "city.h"
 using namespace std;
@@ -61,15 +62,8 @@ int main(){
     sortAusRob = austin;
     sortByTheft(austin);
     sortAusThef = austin;
-    ofstream newAus;
-    newAus.open("AllCitiesByMurder.txt");
-    for(int i = 0; i < 12; i++)
-    {
-        newAus << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
-    }
 
     // //while()
-
     // newAus.close();
 
     ifstream openBoul("Boulder.txt");
@@ -81,63 +75,6 @@ int main(){
     openBoul.close();
     cout << endl;
 
-    
-    ifstream openCic("Chicago.txt");
-    vector<City> chicago;
-    cout << "-------------------" << endl;
-    cout << "CHICAGO, IL  Population: 2.7 Million" << endl;
-    cout << "-------------------" << endl;
-    readFile(openCic,chicago);
-    openCic.close();
-    cout << endl;
-
-    ifstream openNew("NewYork.txt");
-    vector<City> newyork;
-    cout << "-------------------" << endl;
-    cout << "NEWYORK, NY  Population: 8.38 Million" << endl;
-    cout << "-------------------" << endl;
-    readFile(openNew,newyork);
-    openNew.close();
-    cout << endl;
-
-    
-    ifstream openSac("Sacramento.txt"); //reads file
-    vector<City> sacramento; 
-    cout << "-------------------" << endl;
-    cout << "SACRAMENTO, CA  Population: 503,482" << endl;
-    cout << "-------------------" << endl;
-    readFile(openSac,sacramento);
-    openSac.close();
-    cout << endl;
-
-    
-    ifstream openSea("Seattle.txt");
-    vector<City> seattle;
-    cout << "-------------------" << endl;
-    cout << "SEATTLE, WA  Population: 741,251" << endl;
-    cout << "-------------------" << endl;
-    readFile(openSea,seattle);
-    openSea.close();
-    cout << endl << endl;
- 
-    // sortbyMurder(austin), sortByGtA(austin), sortbyRobbery(austin), sortByTheft(austin);
-    // vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
-    //sortedAusMur = austin, sortedAusGTA = austin, sortAusRob = austin, sortAusThef;
-    vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
-    sortByMurder(austin);
-    sortedAusMur = austin;
-    sortByGtA(austin);
-    sortedAusGTA = austin;
-    sortByRobbery(austin);
-    sortAusRob = austin;
-    sortByTheft(austin);
-    sortAusThef = austin;
-
-    //sortBY
-    //sorted austin murder = austin
-    // SortedGTA() =
-    // sorted austin gta = austin
-
     vector<City> sortedBouldMur, sortedBouldGTA, sortedBouldRob, sortedBouldThef;
     sortByMurder(boulder);
     sortedBouldMur = boulder;
@@ -148,6 +85,17 @@ int main(){
     sortByTheft(boulder);
     sortedBouldThef = boulder;
 
+
+    
+    ifstream openCic("Chicago.txt");
+    vector<City> chicago;
+    cout << "-------------------" << endl;
+    cout << "CHICAGO, IL  Population: 2.7 Million" << endl;
+    cout << "-------------------" << endl;
+    readFile(openCic,chicago);
+    openCic.close();
+    cout << endl;
+
     sortByMurder(chicago);
     vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
     sortedChicMur = chicago;
@@ -157,16 +105,15 @@ int main(){
     sortChicRob =chicago;
     sortByTheft(chicago);
     sortChicThef = chicago;
-    
-    vector<City> sortedSeatacMur, sortedSaeGtA, sortedSeaRob, sortedSeaThef;
-    sortByMurder(seattle);
-    sortedSeatacMur = chicago;
-    sortByGtA(seattle);
-    sortedSaeGtA = seattle;
-    sortByRobbery(seattle);
-    sortedSeaRob = seattle;
-    sortByTheft(seattle);
-    sortedSeaThef = seattle;
+
+    ifstream openNew("NewYork.txt");
+    vector<City> newyork;
+    cout << "-------------------" << endl;
+    cout << "NEWYORK, NY  Population: 8.38 Million" << endl;
+    cout << "-------------------" << endl;
+    readFile(openNew,newyork);
+    openNew.close();
+    cout << endl;
 
     vector<City> sortedNewYorkMur, sortedNewYorkGTA, sortedNewYorkRob, sortedNewYorkThef;
     sortByMurder(newyork);
@@ -178,6 +125,15 @@ int main(){
     sortByTheft(newyork);
     sortedNewYorkThef = newyork;
 
+    
+    ifstream openSac("Sacramento.txt"); //reads file
+    vector<City> sacramento; 
+    cout << "-------------------" << endl;
+    cout << "SACRAMENTO, CA  Population: 503,482" << endl;
+    cout << "-------------------" << endl;
+    readFile(openSac,sacramento);
+    openSac.close();
+    cout << endl;
 
     vector<City> sortedSacMur, sortedSacGTA, sortedSacRob, sortedSacThef;
     sortByMurder(sacramento);
@@ -188,6 +144,39 @@ int main(){
     sortedSacRob =sacramento;
     sortByTheft(sacramento);
     sortedSacThef = sacramento;
+
+    
+    ifstream openSea("Seattle.txt");
+    vector<City> seattle;
+    cout << "-------------------" << endl;
+    cout << "SEATTLE, WA  Population: 741,251" << endl;
+    cout << "-------------------" << endl;
+    readFile(openSea,seattle);
+    openSea.close();
+    cout << endl << endl;
+    
+    vector<City> sortedSeatacMur, sortedSaeGtA, sortedSeaRob, sortedSeaThef;
+    sortByMurder(seattle);
+    sortedSeatacMur = chicago;
+    sortByGtA(seattle);
+    sortedSaeGtA = seattle;
+    sortByRobbery(seattle);
+    sortedSeaRob = seattle;
+    sortByTheft(seattle);
+    sortedSeaThef = seattle;
+ 
+
+    ofstream allMur;
+    allMur.open("AllCitiesByMurder.txt");
+    for(int i = 0; i < 12; i++)
+    {
+        allMur << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGTA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
+        allMur << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
+        allMur << sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
+        allMur << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
+        allMur << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
+        allMur << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
+    }
 
     printSidetoSide(austin, chicago);
 
