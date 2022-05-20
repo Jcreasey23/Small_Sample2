@@ -305,7 +305,7 @@ void printSidetoSide(vector<City> city1, vector<City> city2)
 {
     for(int i = 0; i < city1.size(); i++)
     {
-        cout << city1[i].getMonth() << "    " << city1[i].getNumTemp() << "    " << city1[i].getNumMurder() << "    " <<city1[i].getNumGtA() << "   " << city1[i].getNumRobbery() << "   " << city1[i].getNumTheft() << "    ";
-        cout<< city2[i].getMonth() << "    "  << city2[i].getNumTemp() <<  "    " << city2[i].getNumMurder() << "   " << city2[i].getNumGtA() << "   " << city2[i].getNumRobbery() << "    " << city2[i].getNumTheft() << endl;
+        cout << setw(10) << city1[i].getMonth() << "    " << setw(4) << city1[i].getNumTemp() << "    " << setw(4) << city1[i].getNumMurder() << "    " << setw(4) << city1[i].getNumGtA() << "   " << setw(4) << city1[i].getNumRobbery() << "   " << setw(4) << city1[i].getNumTheft() << "    ";
+        cout << setw(10) << city2[i].getMonth() << "    " << setw(4) << city2[i].getNumTemp() <<  "    " << setw(4) << city2[i].getNumMurder() << "   " << setw(4) << city2[i].getNumGtA() << "   " << setw(4) << city2[i].getNumRobbery() << "    " << setw(4) << city2[i].getNumTheft() << endl;
     }
 }
