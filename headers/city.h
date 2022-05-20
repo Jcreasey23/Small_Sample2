@@ -29,6 +29,9 @@ class City{
         string getMonth();
 
         int set_Mur(int value);
+        void set_GtA(int value);
+        void set_Robbery(int value);
+        void set_Theft(int value);
 
 };
 #endif

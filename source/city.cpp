@@ -61,3 +61,17 @@ int City :: set_Mur(int value)
     return value;
 }
 
+void City :: set_GtA(int value)
+{
+    numGtA = value;
+}
+
+void City :: set_Robbery(int value)
+{
+    numRobbery = value;
+}
+
+void City :: set_Theft(int value)
+{
+    numTheft = value;
+}

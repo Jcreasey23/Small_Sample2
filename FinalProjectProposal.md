@@ -9,6 +9,8 @@
 (how you will begin to approach the problem and anticipated challenges)
 In our project, we hope to analyze crime data from four large cities in the United States as well as two smaller ones. (Larger than _ population, smaller than _ population.) We will look at three major crimes: murder, grand theft auto, and robbery, as well as three minor crimes: theft, vandalism, and trespassing. We hope to compare the effect of the average monthly temperature to the crime rates for each individual crime in various large and small cities. Finally, we hope to be able to predict when crime spikes in the cities we choose to study.
 
+We analyzed crime and weather from four major cities and two smaller cities. The four major cities we analyzed are Austin, Chicago, New York and Seattle. The two smaller cities we analyzed are Boulder and Sacramento. We looked at three different major crimes and one minor crime. The major crimes that we compared are Murder, GTA and Robbery. The minor crime we looked at is Theft. We compared the statistics of each crime to differnt cities.
+
 # Approaching the problem: #
 Select four big and two small cities to observe crime data for month by month
 Find crime data for various cities by month
@@ -26,10 +28,12 @@ How to display the data (either in graphs or numbers)
     * Weather average for each city by month
     * Use class with both header and cpp files
     * Txt files to store initial data to be sorted and analyzed
+    * Use different sorting functions to sort the data by crime
 * What must it accomplish or provide? 
     * Provide an analysis of the relation between weather and crime patterns in some major big and small cities.
     * Provide an outline of data showing information on crime rates and weather patterns throughout the year in different cities
     * Provide evidence for students in the class for the relation between crime rates and weather patterns
+    * Provide a place for the user to input which two cities they want to compare
 * Assumptions? 
     * Ignoring different socio-economic sections of cities having higher or lower rates of crime - Looking at city as a whole
     * Assuming the weather is pretty consistent throughout each month (no big fluctuations)
@@ -53,22 +57,17 @@ Class : City
 
 Int avgTemp;            Average temperature of the city in a given month
 String cityName;        Name of city being observed
-Int cityPopulation;     Population of city
 Int numRobbery;         Robberies in a given month
-Int gta;                Grand theft auto in a given month
+Int numGta;             Grand theft auto in a given month
 Int numMurder;          Murder in a given month
 Int numTheft;           Theft in a given month
-Int numVandalism;       Vandalism in a given month
-Int numTrespassing;     Trespassing in a given month
+String month;           Name of each month in a year
 String getcityName();   Returns city name.
-Int getcityPop();       Returns city population
 Int getnumRobbery();    Returns number of robbery cases 
-Int getGTA();           Returns number of grand theft auto cases
+Int getNumGTA();        Returns number of grand theft auto cases
 Int getnumMurder();     Returns number of murder cases 
 Int getnumTheft();      Returns number of theft cases
-Int getnumVand();       Returns number of vandalism cases
-Int getnumTres();       Returns number of trespassing cases
-
+Int getNumTemp();       Returns temperature in a given
 
 Possibly crime acts as child class of each city
 
