@@ -142,7 +142,7 @@ int main(){
     sortedBouldThef = boulder;
 
     sortByMurder(chicago);
-    vector<City> sortedChicMur, sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
+    vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
     sortedChicMur = chicago;
     sortByGtA(chicago);
     sortedChicGTA = chicago;
@@ -156,7 +156,7 @@ int main(){
     sortedSeatacMur = chicago;
     sortByGtA(seattle);
     sortedSaeGtA = seattle;
-    sortbyRobbery(seattle);
+    sortByRobbery(seattle);
     sortedSeaRob = seattle;
     sortByTheft(seattle);
     sortedSeaThef = seattle;
@@ -171,7 +171,6 @@ int main(){
     sortByTheft(newyork);
     sortedNewYorkThef = newyork;
 
-    vector<City> sortedSeattle;
 
     vector<City> sortedSacMur, sortedSacGTA, sortedSacRob, sortedSacThef;
     sortByMurder(sacramento);
