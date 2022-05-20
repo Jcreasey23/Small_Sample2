@@ -121,7 +121,7 @@ int main(){
     sortedAusMur = austin;
     sortByGtA(austin);
     sortedAusGTA = austin;
-    sortbyRobbery(austin);
+    sortByRobbery(austin);
     sortAusRob = austin;
     sortByTheft(austin);
     sortAusThef = austin;
@@ -142,11 +142,11 @@ int main(){
     sortedBouldThef = boulder;
 
     sortByMurder(chicago);
-    vector<City> sortedChicMur;
+    vector<City> sortedChicMur, sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
     sortedChicMur = chicago;
     sortByGtA(chicago);
     sortedChicGTA = chicago;
-    sortbyRobbery(chicago); 
+    sortByRobbery(chicago); 
     sortChicRob =chicago;
     sortByTheft(chicago);
     sortChicThef = chicago;
