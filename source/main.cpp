@@ -106,17 +106,20 @@ int main(){
     openSea.close();
     cout << endl << endl;
  
-    // sortbyMurder(austin), sortbyGtA(austin), sortbyRobbery(austin), sortbyTheft(austin);
+    // sortbyMurder(austin), sortByGtA(austin), sortbyRobbery(austin), sortByTheft(austin);
     // vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
     //sortedAusMur = austin, sortedAusGTA = austin, sortAusRob = austin, sortAusThef;
     vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
 
     sortByMurder(austin);
     sortedAusMur = austin;
-    sortbyGtA(austin);
+    sortByGtA(austin);
     sortedAusGTA = austin;
+    sortbyRobbery(austin);
+    sortAusRob = austin;
+    sortByTheft(austin);
+    sortAusThef = austin;
 
-    sortBY
     //sorted austin murder = austin
     // SortedGTA() =
     // sorted austin gta = austin
@@ -124,28 +127,33 @@ int main(){
     vector<City> sortedBouldMur, sortedBouldGTA, sortedBouldRob, sortedBouldThef;
     sortbyMurder(boulder);
     sortedBouldMur = boulder;
-    sortbyGtA(boulder);
+    sortByGtA(boulder);
     sortedBouldGTA = boulder;
     sortbyRobbery(boulder);
     sortedBouldRob = boulder;
-    sortbyTheft(boulder);
+    sortByTheft(boulder);
     sortedBouldThef = boulder;
 
-<<<<<<< HEAD
     sortByMurder(chicago);
     vector<City> sortedChicMur;
-=======
-    vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
-    sortbyMurder(chicago);
->>>>>>> b656a6375ceb28683859fb40e6cea23f203932de
     sortedChicMur = chicago;
-    sortbyGtA(chicago);
+    sortByGtA(chicago);
     sortedChicGTA = chicago;
-    sortbyRobbery(chicago);
+    sortbyRobbery(chicago); 
     sortChicRob =chicago;
-    sortbyTheft(chicago);
+    sortByTheft(chicago);
     sortChicThef = chicago;
     
+    vector<City> sortedSeatacMur, sortedSaeGtA, sortedSeaRob, sortedSeaThef;
+    sortByMurder(seattle);
+    sortedSeatacMur = chicago;
+    sortByGtA(seattle);
+    sortedSaeGtA = seattle;
+    sortbyRobbery(seattle);
+    sortedSeaRob = seattle;
+    sortByTheft(seattle);
+    sortedSeaThef = seattle;
+
 
     printSidetoSide(austin, chicago);
 
@@ -192,7 +200,7 @@ void sortByMurder(vector<City>& name)
 
 }
 
-void sortbyGtA(vector<City> name)
+void sortByGtA(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
@@ -236,7 +244,7 @@ void sortbyRobbery(vector<City> name)
 
 }
 
-void sortbyTheft(vector<City> name)
+void sortByTheft(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
