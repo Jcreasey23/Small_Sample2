@@ -115,9 +115,15 @@ int main(){
     // SortedGTA()
     // sorted austin gta = austin
 
+    vector<City> sortedBouldMur, sortedBouldGTA, sortedBouldRob, sortedBouldThef;
     sortbyMurder(boulder);
-    vector<City> sortedBouldMur;
     sortedBouldMur = boulder;
+    sortbyGtA(boulder);
+    sortedBouldGTA = boulder;
+    sortbyRobbery(boulder);
+    sortedBouldRob = boulder;
+    sortbyTheft(boulder);
+    sortedBouldThef = boulder;
 
     sortbyMurder(chicago);
     vector<City> sortedChicMur;
