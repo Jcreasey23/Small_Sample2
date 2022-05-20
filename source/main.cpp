@@ -52,12 +52,20 @@ int main(){
     cout << endl;
 
     //sortbyMurder(austin);
-
+    vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
+    sortByMurder(austin);
+    sortedAusMur = austin;
+    sortByGtA(austin);
+    sortedAusGTA = austin;
+    sortByRobbery(austin);
+    sortAusRob = austin;
+    sortByTheft(austin);
+    sortAusThef = austin;
     ofstream newAus;
-    newAus.open("SortedAustinMurder.txt");
+    newAus.open("AllCitiesByMurder.txt");
     for(int i = 0; i < 12; i++)
     {
-        newAus << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
+        newAus << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
     }
 
     // //while()
