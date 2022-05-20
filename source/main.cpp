@@ -34,7 +34,7 @@ int main(){
     ifstream openAus("Austin.txt");
     vector<City> austin;
     cout << "-------------------" << endl;
-    cout << "AUSTIN, TX" << endl;
+    cout << "AUSTIN, TX  Population: 965,872" << endl;
     cout << "-------------------" << endl;
     readFile(openAus,austin);
     // sortbyMurder(austin);
@@ -47,12 +47,12 @@ int main(){
 
     //sortbyMurder(austin);
 
-    // ofstream newAus;
-    // newAus.open("SortedAustinMurder.txt");
-    // for(int i = 0; i < 12; i++)
-    // {
-    //     newAus << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
-    // }
+    ofstream newAus;
+    newAus.open("SortedAustinMurder.txt");
+    for(int i = 0; i < 12; i++)
+    {
+        newAus << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
+    }
 
     // //while()
 
@@ -61,7 +61,7 @@ int main(){
     ifstream openBoul("Boulder.txt");
     vector<City> boulder;
     cout << "-------------------" << endl;
-    cout << "BOULDER, CO" << endl;
+    cout << "BOULDER, CO  Population: 108,777" << endl;
     cout << "-------------------" << endl;
     readFile(openBoul,boulder);
     openBoul.close();
@@ -71,7 +71,7 @@ int main(){
     ifstream openCic("Chicago.txt");
     vector<City> chicago;
     cout << "-------------------" << endl;
-    cout << "CHICAGO, IL" << endl;
+    cout << "CHICAGO, IL  Population: 2.7 Million" << endl;
     cout << "-------------------" << endl;
     readFile(openCic,chicago);
     openCic.close();
@@ -80,7 +80,7 @@ int main(){
     ifstream openNew("NewYork.txt");
     vector<City> newyork;
     cout << "-------------------" << endl;
-    cout << "NEWYORK, NY" << endl;
+    cout << "NEWYORK, NY  Population: 8.38 Million" << endl;
     cout << "-------------------" << endl;
     readFile(openNew,newyork);
     openNew.close();
@@ -90,7 +90,7 @@ int main(){
     ifstream openSac("Sacramento.txt"); //reads file
     vector<City> sacramento; 
     cout << "-------------------" << endl;
-    cout << "SACRAMENTO, CA" << endl;
+    cout << "SACRAMENTO, CA  Population: 503,482" << endl;
     cout << "-------------------" << endl;
     readFile(openSac,sacramento);
     openSac.close();
@@ -100,21 +100,24 @@ int main(){
     ifstream openSea("Seattle.txt");
     vector<City> seattle;
     cout << "-------------------" << endl;
-    cout << "SEATTLE, WA" << endl;
+    cout << "SEATTLE, WA  Population: 741,251" << endl;
     cout << "-------------------" << endl;
     readFile(openSea,seattle);
     openSea.close();
     cout << endl << endl;
  
+    sortbyMurder(austin), sortbyGtA(austin), sortbyRobbery(austin), sortbyTheft(austin);
+    vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
+    sortedAusMur = austin, sortedAusGTA = austin, sortAusRob = austin, sortAusThef;
 
-    printVec(austin);
-    sortbyMurder(austin);
+    sortbyMurder(boulder);
+    vector<City> sortedBouldMur;
+    sortedBouldMur = boulder;
 
-    printVec(austin);
-
-    vector<City> sortedAusMur;
-    sortedAusMur = austin;
-    printVec(sortedAusMur);
+    sortbyMurder(chicago);
+    vector<City> sortedChicMur;
+    sortedChicMur = chicago;
+    
 
     printSidetoSide(austin, chicago);
 
