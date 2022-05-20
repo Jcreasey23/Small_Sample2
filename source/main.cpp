@@ -165,29 +165,23 @@ void sortbyMurder(vector<City>& name)
 
 }
 
-<<<<<<< HEAD
-=======
 void sortbyGtA(vector<City> name)
 {
-    // Format labels here for columns
-
-        for(int i = 0; i < name.size(); i++)
+    for(int i = 0; i < name.size(); i++)
     {
         int curmin = name[i].getNumGtA();
         int curminIndex = i;
-        for(int j = i + 1; j < name.size(); j++)
+        for(int j = 0; j < name.size(); j++)
         {
+            curmin = name[i].getNumGtA();
+            curminIndex = i;
             if(curmin > name[j].getNumGtA())
             {
-                curmin = name[j].getNumGtA();
-                curminIndex = j;
+                City temp = name[i];
+                name[i] = name[j];
+                name[j] = temp;
             }
-        }
-        if(curminIndex != i)
-        {
-            name[curminIndex] = name[i];
-            name[i].set_GtA(curmin);
-        }
+         }
 
     }
 
@@ -195,25 +189,21 @@ void sortbyGtA(vector<City> name)
 
 void sortbyRobbery(vector<City> name)
 {
-    // Format labels here for columns
-
-        for(int i = 0; i < name.size(); i++)
+    for(int i = 0; i < name.size(); i++)
     {
         int curmin = name[i].getNumRobbery();
         int curminIndex = i;
-        for(int j = i + 1; j < name.size(); j++)
+        for(int j = 0; j < name.size(); j++)
         {
+            curmin = name[i].getNumRobbery();
+            curminIndex = i;
             if(curmin > name[j].getNumRobbery())
             {
-                curmin = name[j].getNumRobbery();
-                curminIndex = j;
+                City temp = name[i];
+                name[i] = name[j];
+                name[j] = temp;
             }
-        }
-        if(curminIndex != i)
-        {
-            name[curminIndex] = name[i];
-            name[i].set_Robbery(curmin);
-        }
+         }
 
     }
 
@@ -221,30 +211,25 @@ void sortbyRobbery(vector<City> name)
 
 void sortbyTheft(vector<City> name)
 {
-    // Format labels here for columns
-
-        for(int i = 0; i < name.size(); i++)
+    for(int i = 0; i < name.size(); i++)
     {
         int curmin = name[i].getNumTheft();
         int curminIndex = i;
-        for(int j = i + 1; j < name.size(); j++)
+        for(int j = 0; j < name.size(); j++)
         {
+            curmin = name[i].getNumTheft();
+            curminIndex = i;
             if(curmin > name[j].getNumTheft())
             {
-                curmin = name[j].getNumTheft();
-                curminIndex = j;
+                City temp = name[i];
+                name[i] = name[j];
+                name[j] = temp;
             }
-        }
-        if(curminIndex != i)
-        {
-            name[curminIndex] = name[i];
-            name[i].set_Theft(curmin);
-        }
+         }
 
     }
 
 }
->>>>>>> 89e64e56b755500c0ab45d2abb9b9c160d548cca
 
 //prints 
 void printVec(vector<City> name)
