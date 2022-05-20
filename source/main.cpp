@@ -147,7 +147,15 @@ int main(){
     sortbyTheft(chicago);
     sortChicThef = chicago;
     
-    vector<City> sortedNewYorkMur;
+    vector<City> sortedNewYorkMur, sortedNewYorkGTA, sortedNewYorkRob, sortedNewYorkThef;
+    sortByMurder(newyork);
+    sortedNewYorkMur = newyork;
+    sortByGtA(newyork);
+    sortedNewYorkGTA = newyork;
+    sortByRobbery(newyork);
+    sortedNewYorkRob = newyork;
+    sortByTheft(newyork);
+    sortedNewYorkThef = newyork;
 
     vector<City> sortedSeattle;
 
