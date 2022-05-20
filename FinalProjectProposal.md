@@ -33,7 +33,6 @@ How to display the data (either in graphs or numbers)
     * Provide an analysis of the relation between weather and crime patterns in some major big and small cities.
     * Provide an outline of data showing information on crime rates and weather patterns throughout the year in different cities
     * Provide evidence for students in the class for the relation between crime rates and weather patterns
-    * Provide a place for the user to input which two cities they want to compare
 * Assumptions? 
     * Ignoring different socio-economic sections of cities having higher or lower rates of crime - Looking at city as a whole
     * Assuming the weather is pretty consistent throughout each month (no big fluctuations)
