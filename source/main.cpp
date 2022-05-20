@@ -106,20 +106,26 @@ int main(){
     openSea.close();
     cout << endl << endl;
  
-    sortbyMurder(austin), sortbyGtA(austin), sortbyRobbery(austin), sortbyTheft(austin);
+    // sortbyMurder(austin), sortbyGtA(austin), sortbyRobbery(austin), sortbyTheft(austin);
+    // vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
+    //sortedAusMur = austin, sortedAusGTA = austin, sortAusRob = austin, sortAusThef;
     vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
-    sortedAusMur = austin, sortedAusGTA = austin, sortAusRob = austin, sortAusThef;
 
-    // Sortmurder()
+    sortByMurder(austin);
+    sortedAusMur = austin;
+    sortbyGtA(austin);
+    sortedAusGTA = austin;
+
+    sortBY
     //sorted austin murder = austin
-    // SortedGTA()
+    // SortedGTA() =
     // sorted austin gta = austin
 
     sortbyMurder(boulder);
     vector<City> sortedBouldMur;
     sortedBouldMur = boulder;
 
-    sortbyMurder(chicago);
+    sortByMurder(chicago);
     vector<City> sortedChicMur;
     sortedChicMur = chicago;
     
@@ -147,7 +153,7 @@ void readFile(ifstream &openAus, vector<City> &cityName)
 }
 
 //sorts each city's data by crime - murder
-void sortbyMurder(vector<City>& name)
+void sortByMurder(vector<City>& name)
 {
     for(int i = 0; i < name.size(); i++)
     {
