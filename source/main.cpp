@@ -125,9 +125,15 @@ int main(){
     sortbyTheft(boulder);
     sortedBouldThef = boulder;
 
+    vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
     sortbyMurder(chicago);
-    vector<City> sortedChicMur;
     sortedChicMur = chicago;
+    sortbyGtA(chicago);
+    sortedChicGTA = chicago;
+    sortbyRobbery(chicago);
+    sortChicRob =chicago;
+    sortbyTheft(chicago);
+    sortChicThef = chicago;
     
 
     printSidetoSide(austin, chicago);
