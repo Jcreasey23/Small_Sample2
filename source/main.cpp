@@ -12,9 +12,11 @@ using namespace std;
 
 void readFile(ifstream &openAus,vector<City>& cityName);
 
-void sortbyMurder(vector<City> name);
+void sortbyMurder(vector<City>& name);
 
 void printVec(vector<City> name);
+
+void printSidetoSide(vector<City> city1, vector<City> city2);
 
 int main(){
     string cityName; //name of city being observed
@@ -102,9 +104,23 @@ int main(){
     cout << "-------------------" << endl;
     readFile(openSea,seattle);
     openSea.close();
+    cout << endl << endl;
  
-    sortbyMurder(austin);
+    // vector<City> userIn1;
+    // vector<City> userIn2;
+    // cout << "Please Enter 2 cities to compare monthly data. *Caps sensitive*" << endl;
+    // cout << "austin, boulder, chicago, newyork, sacramento, seattle" << endl;
+    // cin >> userIn1;
+    cout<<"########### TEST #############\n";
     printVec(austin);
+    sortbyMurder(austin);
+    cout<<"\n\n";
+    printVec(austin);
+    cout<<"############## TEST##########\n";
+    vector<City> sortedAusMur;
+    sortedAusMur = austin;
+    cout << sortedAusMur[0].getMonth() << endl;
+    printVec(sortedAusMur);
 
    
 return 0;
@@ -127,29 +143,28 @@ void readFile(ifstream &openAus, vector<City> &cityName)
 }
 
 //sorts each city's data by crime - murder
-void sortbyMurder(vector<City> name)
+void sortbyMurder(vector<City>& name)
 {
     for(int i = 0; i < name.size(); i++)
     {
         int curmin = name[i].getNumMurder();
         int curminIndex = i;
-        for(int j = i + 1; j < name.size(); j++)
+        for(int j = 0; j < name.size(); j++)
         {
+            curmin = name[i].getNumMurder();
+            curminIndex = i;
             if(curmin > name[j].getNumMurder())
             {
-                curmin = name[j].getNumMurder();
-                curminIndex = j;
+                City temp = name[i];
+                name[i] = name[j];
+                name[j] = temp;
             }
-        }
-        if(curminIndex != i)
-        {
-            name[curminIndex] = name[i];
-            name[i].set_Mur(curmin);
-        }
+         }
 
     }
 
 }
+
 
 //prints 
 void printVec(vector<City> name)
@@ -159,3 +174,16 @@ void printVec(vector<City> name)
         cout << name[i].getMonth() << " " << name[i].getNumTemp() << " " << name[i].getNumMurder() << " " << name[i].getNumGtA() << " " << name[i].getNumRobbery() << " " << name[i].getNumTheft() << endl;
     }
 }
+
+// void printSidetoSide(vector<City> city1, vector<City> city2)
+// {
+//     for(int i = 0; i < city1.size(); i++)
+//     {
+//         cout << city1[i].getMonth() << "    " << city2[i].getMonth() << endl;;
+//         city1[i].getNumTemp() << "  " << city2[i].getNumTemp() << endl;
+//         city1[i].getNumMurder() << "    " << city2[i].getNumMurder() << endl;
+//         city1[i].getNumGtA() << "   " << city2[i].getNumGtA() << endl;
+//         city1[i].getNumRobbery() << "   " << city2[i].getNumRobbery() << endl;
+//         city1[i].getNumTheft() << " " << city2[i].getNumTheft() << endl;
+//     }
+// }
