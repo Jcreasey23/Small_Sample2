@@ -10,7 +10,7 @@
 #include "city.h"
 using namespace std;
 
-void readFile(ifstream &openAus,vector<City> cityName);
+void readFile(ifstream &openAus,vector<City>& cityName);
 
 void sortbyMurder(vector<City> name);
 
@@ -103,32 +103,25 @@ int main(){
     readFile(openSea,seattle);
     openSea.close();
  
-    
-   //sortbyMurder(austin);
-    // for(int i = 0; i < 12; i++)
-    // {
-    //     cout << austin[i].getNumTemp() << " " << austin[i].getNumMurder() << " " << austin[i].getNumGtA() << " " << austin[i].getNumRobbery() << " " << austin[i].getNumTheft() << endl;
-    // }
-    // vector<City> murSortAus;
-    // murSortAus = austin;
-    // printVec(murSortAus);
+    sortbyMurder(austin);
+    printVec(austin);
 
+   
 return 0;
 }   // End of main
 
 //function header
 //prints each files information to the terminal
-void readFile(ifstream &openAus, vector<City> cityName)
+void readFile(ifstream &openAus, vector<City> &cityName)
 {
-
-    string month; 
-    int avgTemp, numMurder, numGtA, numRobbery, numTheft;
+    string mnth; 
+    int avgTmp, numMur, nmGtA, numRob, numThft;
     int counter = 0;
     while(counter < 12)
     {
-        openAus >> month >> avgTemp >> numMurder >> numGtA >> numRobbery >> numTheft ;   // Reads one line from txt file
-        cityName.push_back(City(month,avgTemp,numMurder,numGtA,numRobbery,numTheft));   
-        cout << month << " " << avgTemp << " " << numMurder << " " << numGtA << " " << numRobbery << " " <<  numTheft << endl;  
+        openAus >> mnth >> avgTmp >> numMur >> nmGtA >> numRob >> numThft ;   // Reads one line from txt file
+        cityName.push_back(City(mnth,avgTmp,numMur,nmGtA,numRob,numThft));   
+        cout << mnth << " " << avgTmp << " " << numMur << " " << nmGtA << " " << numRob << " " <<  numThft << endl;  
         counter++;
     }
 }
@@ -163,6 +156,6 @@ void printVec(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
-        cout << name[i].getNumTemp() << " " << name[i].getNumMurder() << " " << name[i].getNumGtA() << " " << name[i].getNumRobbery() << " " << name[i].getNumTheft() << endl;
+        cout << name[i].getMonth() << " " << name[i].getNumTemp() << " " << name[i].getNumMurder() << " " << name[i].getNumGtA() << " " << name[i].getNumRobbery() << " " << name[i].getNumTheft() << endl;
     }
 }

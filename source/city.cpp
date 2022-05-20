@@ -11,7 +11,6 @@ using namespace std;
 ////////////////////////////////////////////
 
 City::City(){
-    //cityName = " ";
     month = "__";
     avgTemp = 0;
     numRobbery = 0;
