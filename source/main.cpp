@@ -53,11 +53,11 @@ int main(){
     cout << endl;
 
     //sortbyMurder(austin);
-    vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
+    vector<City> sortedAusMur, sortedAusGtA, sortAusRob, sortAusThef;
     sortByMurder(austin);
     sortedAusMur = austin;
     sortByGtA(austin);
-    sortedAusGTA = austin;
+    sortedAusGtA = austin;
     sortByRobbery(austin);
     sortAusRob = austin;
     sortByTheft(austin);
@@ -75,11 +75,11 @@ int main(){
     openBoul.close();
     cout << endl;
 
-    vector<City> sortedBouldMur, sortedBouldGTA, sortedBouldRob, sortedBouldThef;
+    vector<City> sortedBouldMur, sortedBouldGtA, sortedBouldRob, sortedBouldThef;
     sortByMurder(boulder);
     sortedBouldMur = boulder;
     sortByGtA(boulder);
-    sortedBouldGTA = boulder;
+    sortedBouldGtA = boulder;
     sortByRobbery(boulder);
     sortedBouldRob = boulder;
     sortByTheft(boulder);
@@ -97,10 +97,10 @@ int main(){
     cout << endl;
 
     sortByMurder(chicago);
-    vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
+    vector<City> sortedChicMur, sortedChicGtA, sortChicRob, sortChicThef;
     sortedChicMur = chicago;
     sortByGtA(chicago);
-    sortedChicGTA = chicago;
+    sortedChicGtA = chicago;
     sortByRobbery(chicago); 
     sortChicRob =chicago;
     sortByTheft(chicago);
@@ -115,11 +115,11 @@ int main(){
     openNew.close();
     cout << endl;
 
-    vector<City> sortedNewYorkMur, sortedNewYorkGTA, sortedNewYorkRob, sortedNewYorkThef;
+    vector<City> sortedNewYorkMur, sortedNewYorkGtA, sortedNewYorkRob, sortedNewYorkThef;
     sortByMurder(newyork);
     sortedNewYorkMur = newyork;
     sortByGtA(newyork);
-    sortedNewYorkGTA = newyork;
+    sortedNewYorkGtA = newyork;
     sortByRobbery(newyork);
     sortedNewYorkRob = newyork;
     sortByTheft(newyork);
@@ -135,11 +135,11 @@ int main(){
     openSac.close();
     cout << endl;
 
-    vector<City> sortedSacMur, sortedSacGTA, sortedSacRob, sortedSacThef;
+    vector<City> sortedSacMur, sortedSacGtA, sortedSacRob, sortedSacThef;
     sortByMurder(sacramento);
     sortedSacMur = sacramento;
     sortByGtA(sacramento);
-    sortedSacGTA = sacramento;
+    sortedSacGtA = sacramento;
     sortByRobbery(sacramento);
     sortedSacRob =sacramento;
     sortByTheft(sacramento);
@@ -155,11 +155,11 @@ int main(){
     openSea.close();
     cout << endl << endl;
     
-    vector<City> sortedSeatacMur, sortedSaeGtA, sortedSeaRob, sortedSeaThef;
+    vector<City> sortedSeatacMur, sortedSeaGtA, sortedSeaRob, sortedSeaThef;
     sortByMurder(seattle);
     sortedSeatacMur = chicago;
     sortByGtA(seattle);
-    sortedSaeGtA = seattle;
+    sortedSeaGtA = seattle;
     sortByRobbery(seattle);
     sortedSeaRob = seattle;
     sortByTheft(seattle);
@@ -170,13 +170,51 @@ int main(){
     allMur.open("AllCitiesByMurder.txt");
     for(int i = 0; i < 12; i++)
     {
-        allMur << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGTA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
+        allMur << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
         allMur << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
         allMur << sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
         allMur << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
         allMur << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
         allMur << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
     }
+
+    // ofstream allGtA;
+    // allGtA.open("AllCitiesByGtA.txt");
+    // for(int i = 0; i < 12; i++)
+    // {
+    //     allGtA << sortedAusGtA[i].getMonth() << sortedAusGtA[i].getNumTemp() << " " << sortedAusGtA[i].getNumGtA() << " " << sortedAusGtA[i].getNumGtA() << " " << sortedAusGtA[i].getNumRobbery() << " " << sortedAusGtA[i].getNumTheft() << " ";
+    //     allGtA << sortedBouldGtA[i].getMonth() << sortedBouldGtA[i].getNumTemp() << " " << sortedBouldGtA[i].getNumGtA() << " " << sortedBouldGtA[i].getNumGtA() << " " << sortedBouldGtA[i].getNumRobbery() << " " << sortedBouldGtA[i].getNumGtA() << " ";
+    //     allGtA << sortedChicGtA[i].getMonth() << sortedChicGtA[i].getNumTemp() << " " << sortedChicGtA[i].getNumGtA() << " " << sortedChicGtA[i].getNumGtA() << " " << sortedChicGtA[i].getNumRobbery() << " " << sortedChicGtA[i].getNumTheft() << " ";
+    //     allGtA << sortedNewYorkGtA[i].getMonth() << sortedNewYorkGtA[i].getNumTemp() << " " << sortedNewYorkGtA[i].getNumGtA() << " " << sortedNewYorkGtA[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkGtA[i].getNumTheft() << " ";
+    //     allGtA << sortedSacGtA[i].getMonth() << sortedSacGtA[i].getNumTemp() << " " << sortedSacGtA[i].getNumGtA() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacGtA[i].getNumRobbery() << " " << sortedSacGtA[i].getNumTheft() << " ";
+    //     allGtA  << sortedSeaGtA[i].getMonth() << sortedSeaGtA[i].getNumTemp() << " " << sortedSeaGtA[i].getNumGtA() << " " << sortedSeaGtA[i].getNumGtA() << " " << sortedSeaGtA[i].getNumRobbery() << " " << sortedSeaGtA[i].getNumTheft() << endl;
+    // }
+
+    // ofstream allRobbery;
+    // allMur.open("AllCitiesByMurder.txt");
+    // for(int i = 0; i < 12; i++)
+    // {
+    //     allRobbery << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
+    //     allRobbery << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
+    //     allRobbery<< sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
+    //     allRobbery << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
+    //     allRobbery << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
+    //     allRobbery << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
+    // }
+
+    // ofstream allTheft;
+    // allMur.open("AllCitiesByMurder.txt");
+    // for(int i = 0; i < 12; i++)
+    // {
+    //     allTheft << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
+    //     allTheft << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
+    //     allTheft << sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
+    //     allTheft << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
+    //     allTheft << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
+    //     allTheft << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
+    // }
+    
+
 
     printSidetoSide(austin, chicago);
 
