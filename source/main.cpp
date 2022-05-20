@@ -12,7 +12,13 @@ using namespace std;
 
 void readFile(ifstream &openAus,vector<City>& cityName);
 
-void sortbyMurder(vector<City>& name);
+void sortByMurder(vector<City>& name);
+
+void sortByGtA(vector<City> name);
+
+void sortByRobbery(vector<City> name);
+
+void sortByTheft(vector<City> name);
 
 void printVec(vector<City> name);
 
@@ -120,16 +126,17 @@ int main(){
     sortByTheft(austin);
     sortAusThef = austin;
 
+    //sortBY
     //sorted austin murder = austin
     // SortedGTA() =
     // sorted austin gta = austin
 
     vector<City> sortedBouldMur, sortedBouldGTA, sortedBouldRob, sortedBouldThef;
-    sortbyMurder(boulder);
+    sortByMurder(boulder);
     sortedBouldMur = boulder;
     sortByGtA(boulder);
     sortedBouldGTA = boulder;
-    sortbyRobbery(boulder);
+    sortByRobbery(boulder);
     sortedBouldRob = boulder;
     sortByTheft(boulder);
     sortedBouldThef = boulder;
@@ -154,6 +161,27 @@ int main(){
     sortByTheft(seattle);
     sortedSeaThef = seattle;
 
+    vector<City> sortedNewYorkMur, sortedNewYorkGTA, sortedNewYorkRob, sortedNewYorkThef;
+    sortByMurder(newyork);
+    sortedNewYorkMur = newyork;
+    sortByGtA(newyork);
+    sortedNewYorkGTA = newyork;
+    sortByRobbery(newyork);
+    sortedNewYorkRob = newyork;
+    sortByTheft(newyork);
+    sortedNewYorkThef = newyork;
+
+    vector<City> sortedSeattle;
+
+    vector<City> sortedSacMur, sortedSacGTA, sortedSacRob, sortedSacThef;
+    sortByMurder(sacramento);
+    sortedSacMur = sacramento;
+    sortByGtA(sacramento);
+    sortedSacGTA = sacramento;
+    sortByRobbery(sacramento);
+    sortedSacRob =sacramento;
+    sortByTheft(sacramento);
+    sortedSacThef = sacramento;
 
     printSidetoSide(austin, chicago);
 
@@ -222,7 +250,7 @@ void sortByGtA(vector<City> name)
 
 }
 
-void sortbyRobbery(vector<City> name)
+void sortByRobbery(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
