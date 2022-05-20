@@ -121,13 +121,30 @@ int main(){
     // SortedGTA() =
     // sorted austin gta = austin
 
+    vector<City> sortedBouldMur, sortedBouldGTA, sortedBouldRob, sortedBouldThef;
     sortbyMurder(boulder);
-    vector<City> sortedBouldMur;
     sortedBouldMur = boulder;
+    sortbyGtA(boulder);
+    sortedBouldGTA = boulder;
+    sortbyRobbery(boulder);
+    sortedBouldRob = boulder;
+    sortbyTheft(boulder);
+    sortedBouldThef = boulder;
 
+<<<<<<< HEAD
     sortByMurder(chicago);
     vector<City> sortedChicMur;
+=======
+    vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
+    sortbyMurder(chicago);
+>>>>>>> b656a6375ceb28683859fb40e6cea23f203932de
     sortedChicMur = chicago;
+    sortbyGtA(chicago);
+    sortedChicGTA = chicago;
+    sortbyRobbery(chicago);
+    sortChicRob =chicago;
+    sortbyTheft(chicago);
+    sortChicThef = chicago;
     
 
     printSidetoSide(austin, chicago);

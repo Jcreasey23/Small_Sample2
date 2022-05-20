@@ -61,7 +61,7 @@ Int numGta;             Grand theft auto in a given month
 Int numMurder;          Murder in a given month
 Int numTheft;           Theft in a given month
 String month;           Name of each month in a year
-String getcityName();   Returns city name.
+String getcityName();   Returns city name
 Int getnumRobbery();    Returns number of robbery cases 
 Int getNumGTA();        Returns number of grand theft auto cases
 Int getnumMurder();     Returns number of murder cases 
