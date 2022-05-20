@@ -12,7 +12,13 @@ using namespace std;
 
 void readFile(ifstream &openAus,vector<City>& cityName);
 
-void sortbyMurder(vector<City>& name);
+void sortByMurder(vector<City>& name);
+
+void sortByGtA(vector<City> name);
+
+void sortByRobbery(vector<City> name);
+
+void sortByTheft(vector<City> name);
 
 void printVec(vector<City> name);
 
@@ -116,7 +122,7 @@ int main(){
     sortbyGtA(austin);
     sortedAusGTA = austin;
 
-    sortBY
+    //sortBY
     //sorted austin murder = austin
     // SortedGTA() =
     // sorted austin gta = austin
@@ -131,13 +137,8 @@ int main(){
     sortbyTheft(boulder);
     sortedBouldThef = boulder;
 
-<<<<<<< HEAD
-    sortByMurder(chicago);
-    vector<City> sortedChicMur;
-=======
     vector<City> sortedChicMur, sortedChicGTA, sortChicRob, sortChicThef;
     sortbyMurder(chicago);
->>>>>>> b656a6375ceb28683859fb40e6cea23f203932de
     sortedChicMur = chicago;
     sortbyGtA(chicago);
     sortedChicGTA = chicago;
@@ -197,7 +198,7 @@ void sortByMurder(vector<City>& name)
 
 }
 
-void sortbyGtA(vector<City> name)
+void sortByGtA(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
@@ -219,7 +220,7 @@ void sortbyGtA(vector<City> name)
 
 }
 
-void sortbyRobbery(vector<City> name)
+void sortByRobbery(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
@@ -241,7 +242,7 @@ void sortbyRobbery(vector<City> name)
 
 }
 
-void sortbyTheft(vector<City> name)
+void sortByTheft(vector<City> name)
 {
     for(int i = 0; i < name.size(); i++)
     {
