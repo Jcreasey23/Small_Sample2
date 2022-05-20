@@ -116,7 +116,6 @@ int main(){
     // vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
     //sortedAusMur = austin, sortedAusGTA = austin, sortAusRob = austin, sortAusThef;
     vector<City> sortedAusMur, sortedAusGTA, sortAusRob, sortAusThef;
-
     sortByMurder(austin);
     sortedAusMur = austin;
     sortByGtA(austin);
