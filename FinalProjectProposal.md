@@ -68,6 +68,8 @@ Int getnumMurder();     Returns number of murder cases
 Int getnumTheft();      Returns number of theft cases
 Int getNumTemp();       Returns temperature in a given
 
+The main cpp has sorting functions for each crime. The sorting functions sort from highest number of a specific crime to lowest number of that crime. It moves each row according to the crime that is being sorted. The main cpp also has a print vector and a way to print data from different cities side to side.
+
 Possibly crime acts as child class of each city
 
 # Possible Data to be used: #
