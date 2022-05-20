@@ -135,6 +135,11 @@ int main(){
     sortbyTheft(chicago);
     sortChicThef = chicago;
     
+    vector<City> sortedNewYorkMur;
+
+    vector<City> sortedSeattle;
+
+    vector<City> sortedSacramento;
 
     printSidetoSide(austin, chicago);
 
