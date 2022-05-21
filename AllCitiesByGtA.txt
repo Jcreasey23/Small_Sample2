@@ -1,12 +1,24 @@
-January 51 249 March 41 17 July 76 959 December 39 113 September 71 61 January 42 530
-March 62 324 Febuary 34 18 June 70 794 September 69 117 April 59 57 July 66 650
-July 84 357 July 73 35 May 59 829 October 58 97 May 66 64 August 67 796
-August 85 353 September 63 37 September 67 921 August 76 106 June 72 66 September 62 948
-October 70 356 October 51 45 August 75 996 January 33 94 Febuary 51 39 October 53 1031
-September 79 337 December 32 69 October 55 962 July 77 61 August 74 53 May 57 478
-February 55 239 January 33 16 April 49 659 May 63 159 July 75 59 June 62 517
-November 60 374 August 71 41 November 43 938 November 48 124 November 53 44 April 51 521
-June 82 318 April 48 31 December 32 911 March 42 99 December 46 64 November 46 877
-April 69 322 May 57 24 Februray 30 1988 June 72 76 January 46 50 March 47 404
-December 53 330 November 40 22 January 27 668 Februray 35 99 October 63 60 February 44 430
-May 76 309 June 67 18 March 39 628 April 53 82 March 55 62 December 41 904
+January 51 249 
+March 41 17 July 76 959 December 39 113 September 71 61 January 42 530
+March 62 324 
+Febuary 34 18 June 70 794 September 69 117 April 59 57 July 66 650
+July 84 357 
+July 73 35 May 59 829 October 58 97 May 66 64 August 67 796
+August 85 353 
+September 63 37 September 67 921 August 76 106 June 72 66 September 62 948
+October 70 356 
+October 51 45 August 75 996 January 33 94 Febuary 51 39 October 53 1031
+September 79 337 
+December 32 69 October 55 962 July 77 61 August 74 53 May 57 478
+February 55 239 
+January 33 16 April 49 659 May 63 159 July 75 59 June 62 517
+November 60 374 
+August 71 41 November 43 938 November 48 124 November 53 44 April 51 521
+June 82 318 
+April 48 31 December 32 911 March 42 99 December 46 64 November 46 877
+April 69 322 
+May 57 24 Februray 30 1988 June 72 76 January 46 50 March 47 404
+December 53 330 
+November 40 22 January 27 668 Februray 35 99 October 63 60 February 44 430
+May 76 309 
+June 67 18 March 39 628 April 53 82 March 55 62 December 41 904
