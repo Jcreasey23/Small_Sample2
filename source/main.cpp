@@ -185,17 +185,17 @@ int main()
     for (int i = 0; i < 12; i++)
     {
         //allGtA << "Austin, TX \n";
-        allGtA << sortedAusGtA[i].getMonth() << " " << sortedAusGtA[i].getNumTemp() << " " << sortedAusGtA[i].getNumGtA() << " ";
+        allGtA << "Austin, TX " << setw(10) << sortedAusGtA[i].getMonth() << " " << setw(4) << sortedAusGtA[i].getNumTemp() << " " << setw(4) << sortedAusGtA[i].getNumGtA() << " ";
         //allGtA << "Boulder, CO \n";
-        allGtA << sortedBouldGtA[i].getMonth() << " " << sortedBouldGtA[i].getNumTemp() << " " << sortedBouldGtA[i].getNumGtA() << " ";
+        allGtA << "Boulder, CO " << setw(10) << sortedBouldGtA[i].getMonth() << " " << setw(4) << sortedBouldGtA[i].getNumTemp() << " " << setw(4) << sortedBouldGtA[i].getNumGtA() << " ";
         //allGtA << "Chicago, IL \n";
-        allGtA << sortedChicGtA[i].getMonth() << " " << sortedChicGtA[i].getNumTemp() << " " << sortedChicGtA[i].getNumGtA() << " ";
+        allGtA << "Chicago, IL " << setw(10) << sortedChicGtA[i].getMonth() << " " << setw(4) << sortedChicGtA[i].getNumTemp() << " " << setw(4) << sortedChicGtA[i].getNumGtA() << " ";
         //allGtA << "NewYork, NY\n";
-        allGtA << sortedNewYorkGtA[i].getMonth() << " " << sortedNewYorkGtA[i].getNumTemp() << " " << sortedNewYorkGtA[i].getNumGtA() << " ";
+        allGtA << "NewYork, NY " << setw(10) << sortedNewYorkGtA[i].getMonth() << " " << setw(4) << sortedNewYorkGtA[i].getNumTemp() << " " << setw(4) << sortedNewYorkGtA[i].getNumGtA() << " ";
         //allGtA << "Sacramento, CA\n";
-        allGtA << sortedSacGtA[i].getMonth() << " " << sortedSacGtA[i].getNumTemp() << " " << sortedSacGtA[i].getNumGtA() << " ";
+        allGtA << "Sacramento, CA " << setw(10) << sortedSacGtA[i].getMonth() << " " << setw(4) << sortedSacGtA[i].getNumTemp() << " " << setw(4) << sortedSacGtA[i].getNumGtA() << " ";
         //allGtA << "Seattle, WA \n";
-        allGtA << sortedSeaGtA[i].getMonth() << " " << sortedSeaGtA[i].getNumTemp() << " " << sortedSeaGtA[i].getNumGtA() << endl;
+        allGtA << "Seattle, WA " << setw(10) << sortedSeaGtA[i].getMonth() << " " << setw(4) << sortedSeaGtA[i].getNumTemp() << " " << setw(4) << sortedSeaGtA[i].getNumGtA() << endl;
     }
 
     ofstream allRobbery;
