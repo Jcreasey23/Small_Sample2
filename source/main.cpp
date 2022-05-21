@@ -39,9 +39,9 @@ int main()
 
     ifstream openAus("Austin.txt");
     vector<City> austin;
-    cout << "-------------------" << endl;
+    cout << "--------------------------------" << endl;
     cout << "AUSTIN, TX  Population: 965,872" << endl;
-    cout << "-------------------" << endl;
+    cout << "--------------------------------" << endl;
     readFile(openAus, austin);
     // sortbyMurder(austin);
     // for(int i = 0; i < 12; i++)
@@ -67,9 +67,9 @@ int main()
 
     ifstream openBoul("Boulder.txt");
     vector<City> boulder;
-    cout << "-------------------" << endl;
+    cout << "--------------------------------" << endl;
     cout << "BOULDER, CO  Population: 108,777" << endl;
-    cout << "-------------------" << endl;
+    cout << "--------------------------------" << endl;
     readFile(openBoul, boulder);
     openBoul.close();
     cout << endl;
@@ -86,9 +86,9 @@ int main()
 
     ifstream openCic("Chicago.txt");
     vector<City> chicago;
-    cout << "-------------------" << endl;
+    cout << "------------------------------------" << endl;
     cout << "CHICAGO, IL  Population: 2.7 Million" << endl;
-    cout << "-------------------" << endl;
+    cout << "------------------------------------" << endl;
     readFile(openCic, chicago);
     openCic.close();
     cout << endl;
@@ -105,9 +105,9 @@ int main()
 
     ifstream openNew("NewYork.txt");
     vector<City> newyork;
-    cout << "-------------------" << endl;
+    cout << "------------------------------------" << endl;
     cout << "NEWYORK, NY  Population: 8.38 Million" << endl;
-    cout << "-------------------" << endl;
+    cout << "------------------------------------" << endl;
     readFile(openNew, newyork);
     openNew.close();
     cout << endl;
@@ -124,9 +124,9 @@ int main()
 
     ifstream openSac("Sacramento.txt"); // reads file
     vector<City> sacramento;
-    cout << "-------------------" << endl;
+    cout << "-----------------------------------" << endl;
     cout << "SACRAMENTO, CA  Population: 503,482" << endl;
-    cout << "-------------------" << endl;
+    cout << "-----------------------------------" << endl;
     readFile(openSac, sacramento);
     openSac.close();
     cout << endl;
@@ -143,9 +143,9 @@ int main()
 
     ifstream openSea("Seattle.txt");
     vector<City> seattle;
-    cout << "-------------------" << endl;
+    cout << "--------------------------------" << endl;
     cout << "SEATTLE, WA  Population: 741,251" << endl;
-    cout << "-------------------" << endl;
+    cout << "--------------------------------" << endl;
     readFile(openSea, seattle);
     openSea.close();
     cout << endl
