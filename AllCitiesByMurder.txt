@@ -1,12 +1,12 @@
-January51 5 249 75 668 March41 2 17 10 137 July76 111 959 734 3668 December39 126 113 660 26 September71 5 61 75 3 July76 111 959 734 3668
-March62 5 324 86 607 Febuary34 1 18 12 170 June70 94 794 574 3079 September69 124 117 623 11 April59 3 57 61 3 June70 94 794 574 3079
-July84 5 357 74 619 July73 1 35 9 166 May59 86 829 517 2916 October58 119 97 726 23 May66 3 64 69 7 May59 86 829 517 2916
-August85 4 353 99 643 September63 1 37 12 203 September67 82 921 743 3620 August76 109 106 695 5 June72 3 66 64 3 September67 82 921 743 3620
-October70 4 356 94 623 October51 1 45 17 178 August75 68 996 816 3882 January33 108 94 896 57 Febuary51 3 39 79 5 August75 68 996 816 3882
-September79 3 337 88 619 December32 1 69 14 114 October55 68 962 756 3423 July77 103 61 523 11 August74 2 53 69 9 October55 68 962 756 3423
-February55 3 239 62 633 January33 0 16 11 233 April49 62 659 455 2505 May63 93 159 711 26 July75 2 59 65 6 April49 62 659 455 2505
-November60 3 374 100 658 August71 0 41 12 170 November43 62 938 755 2960 November48 92 124 570 18 November53 2 44 62 2 November43 62 938 755 2960
-June82 2 318 123 605 April48 0 31 10 154 December32 57 911 565 2916 March42 84 99 748 30 December46 2 64 75 4 December32 57 911 565 2916
-April69 2 322 87 598 May57 0 24 7 134 Februray30 38 1988 637 4177 June72 81 76 439 4 January46 1 50 74 9 Februray30 38 1988 637 4177
-December53 2 330 96 631 November40 0 22 11 158 January27 36 668 725 4602 Februray35 80 99 865 49 October63 1 60 84 4 January27 36 668 725 4602
-May76 1 309 104 629 June67 0 18 19 187 March39 30 628 496 3531 April53 71 82 492 3 March55 0 62 77 4 March39 30 628 496 3531
+January51 5 March41 2 July76 111 December39 126 September71 5 July76 111
+March62 5 Febuary34 1 June70 94 September69 124 April59 3 June70 94
+July84 5 July73 1 May59 86 October58 119 May66 3 May59 86
+August85 4 September63 1 September67 82 August76 109 June72 3 September67 82
+October70 4 October51 1 August75 68 January33 108 Febuary51 3 August75 68
+September79 3 December32 1 October55 68 July77 103 August74 2 October55 68
+February55 3 January33 0 April49 62 May63 93 July75 2 April49 62
+November60 3 August71 0 November43 62 November48 92 November53 2 November43 62
+June82 2 April48 0 December32 57 March42 84 December46 2 December32 57
+April69 2 May57 0 Februray30 38 June72 81 January46 1 Februray30 38
+December53 2 November40 0 January27 36 Februray35 80 October63 1 January27 36
+May76 1 June67 0 March39 30 April53 71 March55 0 March39 30

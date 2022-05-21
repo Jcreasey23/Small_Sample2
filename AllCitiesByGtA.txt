@@ -1,0 +1,84 @@
+Austin, TX 
+January51 249 Boulder, CO 
+March41 17 Chicago, IL 
+July76 959 NewYork, NY
+December39 113 Sacramento, CA
+September71 61 Seattle, WA 
+January42 530
+Austin, TX 
+March62 324 Boulder, CO 
+Febuary34 18 Chicago, IL 
+June70 794 NewYork, NY
+September69 117 Sacramento, CA
+April59 57 Seattle, WA 
+July66 650
+Austin, TX 
+July84 357 Boulder, CO 
+July73 35 Chicago, IL 
+May59 829 NewYork, NY
+October58 97 Sacramento, CA
+May66 64 Seattle, WA 
+August67 796
+Austin, TX 
+August85 353 Boulder, CO 
+September63 37 Chicago, IL 
+September67 921 NewYork, NY
+August76 106 Sacramento, CA
+June72 66 Seattle, WA 
+September62 948
+Austin, TX 
+October70 356 Boulder, CO 
+October51 45 Chicago, IL 
+August75 996 NewYork, NY
+January33 94 Sacramento, CA
+Febuary51 39 Seattle, WA 
+October53 1031
+Austin, TX 
+September79 337 Boulder, CO 
+December32 69 Chicago, IL 
+October55 962 NewYork, NY
+July77 61 Sacramento, CA
+August74 53 Seattle, WA 
+May57 478
+Austin, TX 
+February55 239 Boulder, CO 
+January33 16 Chicago, IL 
+April49 659 NewYork, NY
+May63 159 Sacramento, CA
+July75 59 Seattle, WA 
+June62 517
+Austin, TX 
+November60 374 Boulder, CO 
+August71 41 Chicago, IL 
+November43 938 NewYork, NY
+November48 124 Sacramento, CA
+November53 44 Seattle, WA 
+April51 521
+Austin, TX 
+June82 318 Boulder, CO 
+April48 31 Chicago, IL 
+December32 911 NewYork, NY
+March42 99 Sacramento, CA
+December46 64 Seattle, WA 
+November46 877
+Austin, TX 
+April69 322 Boulder, CO 
+May57 24 Chicago, IL 
+Februray30 1988 NewYork, NY
+June72 76 Sacramento, CA
+January46 50 Seattle, WA 
+March47 404
+Austin, TX 
+December53 330 Boulder, CO 
+November40 22 Chicago, IL 
+January27 668 NewYork, NY
+Februray35 99 Sacramento, CA
+October63 60 Seattle, WA 
+February44 430
+Austin, TX 
+May76 309 Boulder, CO 
+June67 18 Chicago, IL 
+March39 628 NewYork, NY
+April53 82 Sacramento, CA
+March55 62 Seattle, WA 
+December41 904

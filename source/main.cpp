@@ -170,49 +170,72 @@ int main(){
     allMur.open("AllCitiesByMurder.txt");
     for(int i = 0; i < 12; i++)
     {
-        allMur << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
-        allMur << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
-        allMur << sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
-        allMur << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
-        allMur << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
-        allMur << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
+        allMur << "Austin, TX \n";
+        allMur << sortedAusMur[i].getMonth() << " " << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " ;
+        allMur << "Boulder, CO \n";
+        allMur << sortedBouldMur[i].getMonth() << " " << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " ";
+        allMur << "Chicago, IL \n";
+        allMur << sortedChicMur[i].getMonth() << " " << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " ;
+        allMur << "NewYork, NY \n";
+        allMur << sortedNewYorkMur[i].getMonth() << " " << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " "  ;
+        allMur << "Sacramento, CA\n";
+        allMur << sortedSacMur[i].getMonth() << " " << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " ;
+        allMur << "Seattle, WA \n";
+        allMur << sortedSeatacMur[i].getMonth() << " " << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << endl;
     }
 
-    // ofstream allGtA;
-    // allGtA.open("AllCitiesByGtA.txt");
-    // for(int i = 0; i < 12; i++)
-    // {
-    //     allGtA << sortedAusGtA[i].getMonth() << sortedAusGtA[i].getNumTemp() << " " << sortedAusGtA[i].getNumGtA() << " " << sortedAusGtA[i].getNumGtA() << " " << sortedAusGtA[i].getNumRobbery() << " " << sortedAusGtA[i].getNumTheft() << " ";
-    //     allGtA << sortedBouldGtA[i].getMonth() << sortedBouldGtA[i].getNumTemp() << " " << sortedBouldGtA[i].getNumGtA() << " " << sortedBouldGtA[i].getNumGtA() << " " << sortedBouldGtA[i].getNumRobbery() << " " << sortedBouldGtA[i].getNumGtA() << " ";
-    //     allGtA << sortedChicGtA[i].getMonth() << sortedChicGtA[i].getNumTemp() << " " << sortedChicGtA[i].getNumGtA() << " " << sortedChicGtA[i].getNumGtA() << " " << sortedChicGtA[i].getNumRobbery() << " " << sortedChicGtA[i].getNumTheft() << " ";
-    //     allGtA << sortedNewYorkGtA[i].getMonth() << sortedNewYorkGtA[i].getNumTemp() << " " << sortedNewYorkGtA[i].getNumGtA() << " " << sortedNewYorkGtA[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkGtA[i].getNumTheft() << " ";
-    //     allGtA << sortedSacGtA[i].getMonth() << sortedSacGtA[i].getNumTemp() << " " << sortedSacGtA[i].getNumGtA() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacGtA[i].getNumRobbery() << " " << sortedSacGtA[i].getNumTheft() << " ";
-    //     allGtA  << sortedSeaGtA[i].getMonth() << sortedSeaGtA[i].getNumTemp() << " " << sortedSeaGtA[i].getNumGtA() << " " << sortedSeaGtA[i].getNumGtA() << " " << sortedSeaGtA[i].getNumRobbery() << " " << sortedSeaGtA[i].getNumTheft() << endl;
-    // }
 
-    // ofstream allRobbery;
-    // allMur.open("AllCitiesByMurder.txt");
-    // for(int i = 0; i < 12; i++)
-    // {
-    //     allRobbery << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
-    //     allRobbery << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
-    //     allRobbery<< sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
-    //     allRobbery << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
-    //     allRobbery << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
-    //     allRobbery << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
-    // }
 
-    // ofstream allTheft;
-    // allMur.open("AllCitiesByMurder.txt");
-    // for(int i = 0; i < 12; i++)
-    // {
-    //     allTheft << sortedAusMur[i].getMonth() << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
-    //     allTheft << sortedBouldMur[i].getMonth() << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
-    //     allTheft << sortedChicMur[i].getMonth() << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
-    //     allTheft << sortedNewYorkMur[i].getMonth() << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
-    //     allTheft << sortedSacMur[i].getMonth() << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
-    //     allTheft << sortedSeatacMur[i].getMonth() << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
-    // }
+//<< sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
+    ofstream allGtA;
+    allGtA.open("AllCitiesByGtA.txt");
+    for(int i = 0; i < 12; i++)
+    {   
+        allGtA << "Austin, TX \n";
+        allGtA << sortedAusGtA[i].getMonth() << " " << sortedAusGtA[i].getNumTemp() << " " << sortedAusGtA[i].getNumGtA() << " ";
+        allGtA << "Boulder, CO \n";
+        allGtA << sortedBouldGtA[i].getMonth() << " " << sortedBouldGtA[i].getNumTemp() << " " << sortedBouldGtA[i].getNumGtA() << " ";
+        allGtA << "Chicago, IL \n";
+        allGtA << sortedChicGtA[i].getMonth() << " " << sortedChicGtA[i].getNumTemp() << " " << sortedChicGtA[i].getNumGtA() << " ";
+        allGtA << "NewYork, NY\n";
+        allGtA << sortedNewYorkGtA[i].getMonth() << " " << sortedNewYorkGtA[i].getNumTemp() << " " << sortedNewYorkGtA[i].getNumGtA() << " " ;
+        allGtA << "Sacramento, CA\n";
+        allGtA << sortedSacGtA[i].getMonth() << " " << sortedSacGtA[i].getNumTemp() << " " << sortedSacGtA[i].getNumGtA() << " " ;
+        allGtA << "Seattle, WA \n";
+        allGtA  << sortedSeaGtA[i].getMonth() << " " << sortedSeaGtA[i].getNumTemp() << " " << sortedSeaGtA[i].getNumGtA() << endl;
+    }
+
+    ofstream allRobbery;
+    allMur.open("AllCitiesByRobbery.txt");
+    for(int i = 0; i < 12; i++)
+    {
+        allRobbery << "Austin, TX \n";
+        allRobbery << sortAusRob[i].getMonth() << " " << sortAusRob[i].getNumTemp() << " " << sortAusRob[i].getNumMurder() << " " ;
+        allRobbery << "Boulder, CO \n";
+        allRobbery << sortedBouldMur[i].getMonth() << " " << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " ";
+        allRobbery << "Chicago, IL \n";
+        allRobbery<< sortedChicMur[i].getMonth() << " " << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " ;
+        allRobbery << "NewYork, NY \n";
+        allRobbery << sortedNewYorkMur[i].getMonth() << " " << " " << sortedNewYorkMur[i].getNumRobbery() << " ";
+        allRobbery << "Sacramento, CA \n";
+        allRobbery << sortedSacMur[i].getMonth() << " " << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumRobbery() << " ";
+        allRobbery << "Seattle, WA \n";
+        allRobbery << sortedSeatacMur[i].getMonth() << " " << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumRobbery() << " " << endl;
+    }
+
+    ofstream allTheft;
+    allMur.open("AllCitiesByTheft.txt");
+    for(int i = 0; i < 12; i++)
+    {
+        allGtA << "Austin, TX \n";
+        allTheft << sortedAusMur[i].getMonth() << " " << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " " << sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
+        allGtA << "Boulder, CO \n";
+        allTheft << sortedBouldMur[i].getMonth() << " " << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " " << sortedBouldMur[i].getNumGtA() << " " << sortedBouldMur[i].getNumRobbery() << " " << sortedBouldMur[i].getNumTheft() << " ";
+        allTheft << sortedChicMur[i].getMonth() << " " << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " " << sortedChicMur[i].getNumGtA() << " " << sortedChicMur[i].getNumRobbery() << " " << sortedChicMur[i].getNumTheft() << " ";
+        allTheft << sortedNewYorkMur[i].getMonth() << " " << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " " << sortedNewYorkMur[i].getNumGtA() << " " << sortedNewYorkMur[i].getNumRobbery() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
+        allTheft << sortedSacMur[i].getMonth() << " " << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " " << sortedSacMur[i].getNumGtA() << " " << sortedSacMur[i].getNumRobbery() << " " << sortedSacMur[i].getNumTheft() << " ";
+        allTheft << sortedSeatacMur[i].getMonth() << " " << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << " " << sortedSeatacMur[i].getNumGtA() << " " << sortedSeatacMur[i].getNumRobbery() << " " << sortedSeatacMur[i].getNumTheft() << endl;
+    }
     
 
 
