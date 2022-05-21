@@ -1,12 +1,12 @@
-Austin, TX January 51 5 March 41 2 July 76 111 December 39 126 September 71 5 July 76 111
-Austin, TX March 62 5 Febuary 34 1 June 70 94 September 69 124 April 59 3 June 70 94
-Austin, TX July 84 5 July 73 1 May 59 86 October 58 119 May 66 3 May 59 86
-Austin, TX August 85 4 September 63 1 September 67 82 August 76 109 June 72 3 September 67 82
-Austin, TX October 70 4 October 51 1 August 75 68 January 33 108 Febuary 51 3 August 75 68
-Austin, TX September 79 3 December 32 1 October 55 68 July 77 103 August 74 2 October 55 68
-Austin, TX February 55 3 January 33 0 April 49 62 May 63 93 July 75 2 April 49 62
-Austin, TX November 60 3 August 71 0 November 43 62 November 48 92 November 53 2 November 43 62
-Austin, TX June 82 2 April 48 0 December 32 57 March 42 84 December 46 2 December 32 57
-Austin, TX April 69 2 May 57 0 Februray 30 38 June 72 81 January 46 1 Februray 30 38
-Austin, TX December 53 2 November 40 0 January 27 36 Februray 35 80 October 63 1 January 27 36
-Austin, TX May 76 1 June 67 0 March 39 30 April 53 71 March 55 0 March 39 30
+Austin, TX    January   51    5 Boulder, CO      March   41    2 Chicago, IL       July   76  111 NewYork, NY   December   39  126 Sacramento, CA  September   71    5 Seattle, WA       July   76  111
+Austin, TX      March   62    5 Boulder, CO    Febuary   34    1 Chicago, IL       June   70   94 NewYork, NY  September   69  124 Sacramento, CA      April   59    3 Seattle, WA       June   70   94
+Austin, TX       July   84    5 Boulder, CO       July   73    1 Chicago, IL        May   59   86 NewYork, NY    October   58  119 Sacramento, CA        May   66    3 Seattle, WA        May   59   86
+Austin, TX     August   85    4 Boulder, CO  September   63    1 Chicago, IL  September   67   82 NewYork, NY     August   76  109 Sacramento, CA       June   72    3 Seattle, WA  September   67   82
+Austin, TX    October   70    4 Boulder, CO    October   51    1 Chicago, IL     August   75   68 NewYork, NY    January   33  108 Sacramento, CA    Febuary   51    3 Seattle, WA     August   75   68
+Austin, TX  September   79    3 Boulder, CO   December   32    1 Chicago, IL    October   55   68 NewYork, NY       July   77  103 Sacramento, CA     August   74    2 Seattle, WA    October   55   68
+Austin, TX   February   55    3 Boulder, CO    January   33    0 Chicago, IL      April   49   62 NewYork, NY        May   63   93 Sacramento, CA       July   75    2 Seattle, WA      April   49   62
+Austin, TX   November   60    3 Boulder, CO     August   71    0 Chicago, IL   November   43   62 NewYork, NY   November   48   92 Sacramento, CA   November   53    2 Seattle, WA   November   43   62
+Austin, TX       June   82    2 Boulder, CO      April   48    0 Chicago, IL   December   32   57 NewYork, NY      March   42   84 Sacramento, CA   December   46    2 Seattle, WA   December   32   57
+Austin, TX      April   69    2 Boulder, CO        May   57    0 Chicago, IL   Februray   30   38 NewYork, NY       June   72   81 Sacramento, CA    January   46    1 Seattle, WA   Februray   30   38
+Austin, TX   December   53    2 Boulder, CO   November   40    0 Chicago, IL    January   27   36 NewYork, NY   Februray   35   80 Sacramento, CA    October   63    1 Seattle, WA    January   27   36
+Austin, TX        May   76    1 Boulder, CO       June   67    0 Chicago, IL      March   39   30 NewYork, NY      April   53   71 Sacramento, CA      March   55    0 Seattle, WA      March   39   30

@@ -346,6 +346,8 @@ void printVec(vector<City> name)
     }
 }
 
+
+// printSidetoSide function compares
 void printSidetoSide(vector<City> city1, vector<City> city2)
 {
     for (int i = 0; i < city1.size(); i++)
