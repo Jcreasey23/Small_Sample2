@@ -166,17 +166,17 @@ int main()
     for (int i = 0; i < 12; i++)
     {
         //allMur << "Austin, TX \n";
-        allMur << "Austin, TX " << sortedAusMur[i].getMonth() << " " << sortedAusMur[i].getNumTemp() << " " << sortedAusMur[i].getNumMurder() << " ";
+        allMur << "Austin, TX " << setw(10) << sortedAusMur[i].getMonth() << " " << setw(4) << sortedAusMur[i].getNumTemp() << " " << setw(4) << sortedAusMur[i].getNumMurder() << " ";
         // allMur << "Boulder, CO \n";
-        allMur << sortedBouldMur[i].getMonth() << " " << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumMurder() << " ";
+        allMur << "Boulder, CO " << setw(10) << sortedBouldMur[i].getMonth() << " " << setw(4) << sortedBouldMur[i].getNumTemp() << " " << setw(4) << sortedBouldMur[i].getNumMurder() << " ";
         //allMur << "Chicago, IL \n";
-        allMur << sortedChicMur[i].getMonth() << " " << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumMurder() << " ";
+        allMur << "Chicago, IL " << setw(10) << sortedChicMur[i].getMonth() << " " << setw(4) << sortedChicMur[i].getNumTemp() << " " << setw(4) << sortedChicMur[i].getNumMurder() << " ";
         //allMur << "NewYork, NY \n";
-        allMur << sortedNewYorkMur[i].getMonth() << " " << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumMurder() << " ";
-        //allMur << "Sacramento, CA\n";
-        allMur << sortedSacMur[i].getMonth() << " " << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumMurder() << " ";
+        allMur << "NewYork, NY " << setw(10) << sortedNewYorkMur[i].getMonth() << " " << setw(4) << sortedNewYorkMur[i].getNumTemp() << " " << setw(4) << sortedNewYorkMur[i].getNumMurder() << " ";
+        //allMur << "Sacramento, CA \n";
+        allMur << "Sacramento, CA " << setw(10) << sortedSacMur[i].getMonth() << " " << setw(4) << sortedSacMur[i].getNumTemp() << " " << setw(4) << sortedSacMur[i].getNumMurder() << " ";
         //allMur << "Seattle, WA \n";
-        allMur << sortedSeatacMur[i].getMonth() << " " << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumMurder() << endl;
+        allMur << "Seattle, WA " << setw(10) << sortedSeatacMur[i].getMonth() << " " << setw(4) << sortedSeatacMur[i].getNumTemp() << " " << setw(4) << sortedSeatacMur[i].getNumMurder() << endl;
     }
 
     //<< sortedAusGtA[i].getNumGtA() << " " << sortAusRob[i].getNumRobbery() << " " << sortAusThef[i].getNumTheft() << " ";
