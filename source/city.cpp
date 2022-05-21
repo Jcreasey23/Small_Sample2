@@ -21,57 +21,36 @@ City::City(){
 
 // Both city name and city population will be set as constant variables in main
 City::City(string mnth, int newAvgTemp, int newNumMurder, int newNumGtA, int newNumRobbery, int newNumTheft){
-    month = mnth;
-    avgTemp = newAvgTemp;
-    numRobbery = newNumRobbery;
-    numGtA = newNumGtA;
-    numMurder = newNumMurder;
-    numTheft = newNumTheft;
+    month = mnth;               // assigns month to passed in string from file
+    avgTemp = newAvgTemp;       // asssigns temp to passed in value from file
+    numRobbery = newNumRobbery; // assigns robberies to passed in value from file
+    numGtA = newNumGtA;         // assigns gta to passed in value fromm file
+    numMurder = newNumMurder;   // assigns murder to passed in value from file
+    numTheft = newNumTheft;     // assigns theft to passed in value from file
 }
 
 int City::getNumRobbery(){
-    return numRobbery;
+    return numRobbery;  // retunrs number of robberies
 }
 
 int City::getNumGtA(){
-    return numGtA;
+    return numGtA;      // returns number of Grand theft auto
 }
 
 int City::getNumMurder(){
-    return numMurder;
+    return numMurder;   // returns number of murders
 }
 
 int City::getNumTheft(){
-    return numTheft;
+    return numTheft;    // returns number of theft
 }
 
 int City::getNumTemp()
 {
-    return avgTemp;
+    return avgTemp;     // returns avg temp for a month
 }
 
 string City::getMonth()
 {
-    return month;
-}
-
-int City :: set_Mur(int value)
-{
-    numMurder = value;
-    return value;
-}
-
-void City :: set_GtA(int value)
-{
-    numGtA = value;
-}
-
-void City :: set_Robbery(int value)
-{
-    numRobbery = value;
-}
-
-void City :: set_Theft(int value)
-{
-    numTheft = value;
+    return month;   // returns month of the year
 }

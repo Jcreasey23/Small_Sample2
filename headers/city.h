@@ -14,7 +14,7 @@ class City{
     int numGtA; //grand theft auto cases in a given month
     int numMurder; //murder cases in a given month
     int numTheft; //theft cases in a given month
-    string month;
+    string month; // month of year
     
     public:
         City(); 
@@ -26,12 +26,7 @@ class City{
         int getNumTheft(); //returns the number of theft cases
         int getNumVand(); //returns the number of vandalism cases
         int getNumTemp(); //returns the temperature for a month
-        string getMonth();
-
-        int set_Mur(int value);
-        void set_GtA(int value);
-        void set_Robbery(int value);
-        void set_Theft(int value);
+        string getMonth(); // returnds month of the year
 
 };
 #endif

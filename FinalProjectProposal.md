@@ -18,7 +18,10 @@ Choose crimes to compare
 Find temperature data for each city by month
 Create .txt file with appropriate data for each city
 Create appropriate classes
-Anticipated Challenges
+Develop functions to sort data
+Develep ways for the user to deduct a conclusion for the problem at hand
+
+Anticipated Challenges Include:
 Finding sufficient data on specific crimes, particularly minor crimes, depending on the cities
 How to display the data (either in graphs or numbers)
 
@@ -35,6 +38,8 @@ How to display the data (either in graphs or numbers)
     * Provide evidence for students in the class for the relation between crime rates and weather patterns
 * Assumptions? 
     * Ignoring different socio-economic sections of cities having higher or lower rates of crime - Looking at city as a whole
+    * Other factors may relaten to crime rates
+    * Weather Does not necessarily cause crime
     * Assuming the weather is pretty consistent throughout each month (no big fluctuations)
     * Some attributes will be constant and others will change depending on the purpose of those attributes
 * Predictions
@@ -55,24 +60,24 @@ UML Diagram
 Class : City
 
 Int avgTemp;            Average temperature of the city in a given month
-String cityName;        Name of city being observed
 Int numRobbery;         Robberies in a given month
 Int numGta;             Grand theft auto in a given month
 Int numMurder;          Murder in a given month
 Int numTheft;           Theft in a given month
 String month;           Name of each month in a year
-String getcityName();   Returns city name
+
 Int getnumRobbery();    Returns number of robbery cases 
 Int getNumGTA();        Returns number of grand theft auto cases
 Int getnumMurder();     Returns number of murder cases 
 Int getnumTheft();      Returns number of theft cases
 Int getNumTemp();       Returns temperature in a given
+String get month();     Returns month of the year
 
-The main cpp has sorting functions for each crime. The sorting functions sort from highest number of a specific crime to lowest number of that crime. It moves each row according to the crime that is being sorted. The main cpp also has a print vector and a way to print data from different cities side to side.
+The main cpp has sorting functions for each crime. The sorting functions sort from highest number of a specific crime to lowest number of that crime. It moves each row in a vector according to the crime that is being sorted. The main cpp also has a print vector and a way to print data from different cities side to side. A function that reads our .txt files was added as well. We then also decided to write the results by month for each city according to a certain crime in their own respective output files. (AllCitiesByMurder.txt, AllCitiesByGtA.txt, AllCitiesByRobbery.txt, AllCitiesByTheft.txt). There are many different ways for the user to come to a conclusion and answer the question we were trying to answer.
 
 Possibly crime acts as child class of each city
 
-# Possible Data to be used: #
+# Data to be used #
 ## Big cities ##
 * Seattle, Washington
 https://data.seattle.gov/Public-Safety/Crime-Data/7qe4-t837 - Seattle Crime from 2008- Present
