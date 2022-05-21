@@ -1,12 +1,12 @@
-January 51 668 March 41 137 July 76 3668 December 39 26 September 71 3 July 76 3668
-March 62 607 Febuary 34 170 June 70 3079 September 69 11 April 59 3 June 70 3079
-July 84 619 July 73 166 May 59 2916 October 58 23 May 66 7 May 59 2916
-August 85 643 September 63 203 September 67 3620 August 76 5 June 72 3 September 67 3620
-October 70 623 October 51 178 August 75 3882 January 33 57 Febuary 51 5 August 75 3882
-September 79 619 December 32 114 October 55 3423 July 77 11 August 74 9 October 55 3423
-February 55 633 January 33 233 April 49 2505 May 63 26 July 75 6 April 49 2505
-November 60 658 August 71 170 November 43 2960 November 48 18 November 53 2 November 43 2960
-June 82 605 April 48 154 December 32 2916 March 42 30 December 46 4 December 32 2916
-April 69 598 May 57 134 Februray 30 4177 June 72 4 January 46 9 Februray 30 4177
-December 53 631 November 40 158 January 27 4602 Februray 35 49 October 63 4 January 27 4602
-May 76 629 June 67 187 March 39 3531 April 53 3 March 55 4 March 39 3531
+Austin, TX    January   51  668 Boulder, CO      March   41  137 Chicago, IL       July   76 3668 NewYork, NY   December   39   26 Sacramento, CA  September   71    3 Seattle, WA       July   76 3668
+Austin, TX      March   62  607 Boulder, CO    Febuary   34  170 Chicago, IL       June   70 3079 NewYork, NY  September   69   11 Sacramento, CA      April   59    3 Seattle, WA       June   70 3079
+Austin, TX       July   84  619 Boulder, CO       July   73  166 Chicago, IL        May   59 2916 NewYork, NY    October   58   23 Sacramento, CA        May   66    7 Seattle, WA        May   59 2916
+Austin, TX     August   85  643 Boulder, CO  September   63  203 Chicago, IL  September   67 3620 NewYork, NY     August   76    5 Sacramento, CA       June   72    3 Seattle, WA  September   67 3620
+Austin, TX    October   70  623 Boulder, CO    October   51  178 Chicago, IL     August   75 3882 NewYork, NY    January   33   57 Sacramento, CA    Febuary   51    5 Seattle, WA     August   75 3882
+Austin, TX  September   79  619 Boulder, CO   December   32  114 Chicago, IL    October   55 3423 NewYork, NY       July   77   11 Sacramento, CA     August   74    9 Seattle, WA    October   55 3423
+Austin, TX   February   55  633 Boulder, CO    January   33  233 Chicago, IL      April   49 2505 NewYork, NY        May   63   26 Sacramento, CA       July   75    6 Seattle, WA      April   49 2505
+Austin, TX   November   60  658 Boulder, CO     August   71  170 Chicago, IL   November   43 2960 NewYork, NY   November   48   18 Sacramento, CA   November   53    2 Seattle, WA   November   43 2960
+Austin, TX       June   82  605 Boulder, CO      April   48  154 Chicago, IL   December   32 2916 NewYork, NY      March   42   30 Sacramento, CA   December   46    4 Seattle, WA   December   32 2916
+Austin, TX      April   69  598 Boulder, CO        May   57  134 Chicago, IL   Februray   30 4177 NewYork, NY       June   72    4 Sacramento, CA    January   46    9 Seattle, WA   Februray   30 4177
+Austin, TX   December   53  631 Boulder, CO   November   40  158 Chicago, IL    January   27 4602 NewYork, NY   Februray   35   49 Sacramento, CA    October   63    4 Seattle, WA    January   27 4602
+Austin, TX        May   76  629 Boulder, CO       June   67  187 Chicago, IL      March   39 3531 NewYork, NY      April   53    3 Sacramento, CA      March   55    4 Seattle, WA      March   39 3531
