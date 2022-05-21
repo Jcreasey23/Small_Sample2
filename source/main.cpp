@@ -39,13 +39,13 @@ int main()
     string month;    // Month of the Year
     int counter = 0;
 
-    ifstream openAus("Austin.txt");                     // Reads file with Austin Data
-    vector<City> austin;                                // Initializes vector of city objects for Austin's data
+    ifstream openAus("Austin.txt"); // Reads file with Austin Data
+    vector<City> austin;// Initializes vector of city objects for Austin's data
     cout << "--------------------------------" << endl;
     cout << "AUSTIN, TX  Population: 965,872" << endl;
     cout << "--------------------------------" << endl;
-    readFile(openAus, austin);                          // Reads file and adds lines of file to austin vector
-    openAus.close();                                    // Closes the file
+    readFile(openAus, austin);  // Reads file and adds lines of file to austin vector
+    openAus.close(); // Closes the file
     cout << endl;
 
     vector<City> sortedAusMur, sortedAusGtA, sortAusRob, sortAusThef;       // Initializes vectors to store data sorted highest to lowest for a given crime
@@ -86,15 +86,15 @@ int main()
     openCic.close();                                    // Closes the file
     cout << endl;
 
-    vector<City> sortedChicMur, sortedChicGtA, sortChicRob, sortChicThef;       // Initializes vectors to store data sorted highest to lowest for a given crime
+    vector<City> sortedChicMur, sortedChicGtA, sortedChicagoRob, sortedChicagoTheft;       // Initializes vectors to store data sorted highest to lowest for a given crime
     sortByMurder(chicago);                                                      // Sorts city data by murder
     sortedChicMur = chicago;                                                  // Places sorted data into murder vector
     sortByGtA(chicago);                                                      // Sorts city data by Grand Theft Auto
     sortedChicGtA = chicago;                                                  // Places sorted data into GTA vector
     sortByRobbery(chicago);                                                  // Sorts city data by Robbery
-    sortChicRob = chicago;                                                    // Places sorted data into Robbery vector
+    sortedChicagoRob = chicago;                                                    // Places sorted data into Robbery vector
     sortByTheft(chicago);                                                    // Sorts city data by Theft
-    sortChicThef = chicago;                                                   // Places sorted data into Theft vector
+    sortedChicagoTheft = chicago;                                                   // Places sorted data into Theft vector
 
     ifstream openNew("NewYork.txt");                        // Reads file with New York data
     vector<City> newyork;                                   // initializes vector of city objects for New York's data
@@ -158,17 +158,17 @@ int main()
     allMur.open("AllCitiesByMurder.txt");       // opens file for output of all murder data for each city as well as temperature
     for (int i = 0; i < 12; i++)
     {
-        //allMur << "Austin, TX \n";
+        
         allMur << "Austin, TX " << setw(10) << sortedAusMur[i].getMonth() << " " << setw(4) << sortedAusMur[i].getNumTemp() << " " << setw(4) << sortedAusMur[i].getNumMurder() << " ";         // Line adds month, temp, and murders for a given month in a city to output file
-        // allMur << "Boulder, CO \n";
+        
         allMur << "Boulder, CO " << setw(10) << sortedBouldMur[i].getMonth() << " " << setw(4) << sortedBouldMur[i].getNumTemp() << " " << setw(4) << sortedBouldMur[i].getNumMurder() << " ";         // Line adds month, temp, and murders for a given month in a city to output file
-        //allMur << "Chicago, IL \n";
+        
         allMur << "Chicago, IL " << setw(10) << sortedChicMur[i].getMonth() << " " << setw(4) << sortedChicMur[i].getNumTemp() << " " << setw(4) << sortedChicMur[i].getNumMurder() << " ";         // Line adds month, temp, and murders for a given month in a city to output file
-        //allMur << "NewYork, NY \n";
+        
         allMur << "NewYork, NY " << setw(10) << sortedNewYorkMur[i].getMonth() << " " << setw(4) << sortedNewYorkMur[i].getNumTemp() << " " << setw(4) << sortedNewYorkMur[i].getNumMurder() << " ";         // Line adds month, temp, and murders for a given month in a city to output file
-        //allMur << "Sacramento, CA \n";
+        
         allMur << "Sacramento, CA " << setw(10) << sortedSacMur[i].getMonth() << " " << setw(4) << sortedSacMur[i].getNumTemp() << " " << setw(4) << sortedSacMur[i].getNumMurder() << " ";         // Line adds month, temp, and murders for a given month in a city to output file
-        //allMur << "Seattle, WA \n";
+        
         allMur << "Seattle, WA " << setw(10) << sortedSeatacMur[i].getMonth() << " " << setw(4) << sortedSeatacMur[i].getNumTemp() << " " << setw(4) << sortedSeatacMur[i].getNumMurder() << endl;         // Line adds month, temp, and murders for a given month in a city to output file
     }
 
@@ -177,17 +177,16 @@ int main()
     allGtA.open("AllCitiesByGtA.txt");       // opens file for output of all Grand Theft Auto data for each city as well as temperature
     for (int i = 0; i < 12; i++)
     {
-        //allGtA << "Austin, TX \n";
+        
         allGtA << "Austin, TX " << setw(10) << sortedAusGtA[i].getMonth() << " " << setw(4) << sortedAusGtA[i].getNumTemp() << " " << setw(4) << sortedAusGtA[i].getNumGtA() << " ";         // Line adds month, temp, and Grand Theft Auto for a given month in a city to output file
-        //allGtA << "Boulder, CO \n";
+       
         allGtA << "Boulder, CO " << setw(10) << sortedBouldGtA[i].getMonth() << " " << setw(4) << sortedBouldGtA[i].getNumTemp() << " " << setw(4) << sortedBouldGtA[i].getNumGtA() << " ";         // Line adds month, temp, and Grand Theft Auto for a given month in a city to output file
-        //allGtA << "Chicago, IL \n";
+        
         allGtA << "Chicago, IL " << setw(10) << sortedChicGtA[i].getMonth() << " " << setw(4) << sortedChicGtA[i].getNumTemp() << " " << setw(4) << sortedChicGtA[i].getNumGtA() << " ";         // Line adds month, temp, and Grand Theft Auto for a given month in a city to output file
-        //allGtA << "NewYork, NY\n";
+        
         allGtA << "NewYork, NY " << setw(10) << sortedNewYorkGtA[i].getMonth() << " " << setw(4) << sortedNewYorkGtA[i].getNumTemp() << " " << setw(4) << sortedNewYorkGtA[i].getNumGtA() << " ";         // Line adds month, temp, and Grand Theft Auto for a given month in a city to output file
-        //allGtA << "Sacramento, CA\n";
+        
         allGtA << "Sacramento, CA " << setw(10) << sortedSacGtA[i].getMonth() << " " << setw(4) << sortedSacGtA[i].getNumTemp() << " " << setw(4) << sortedSacGtA[i].getNumGtA() << " ";         // Line adds month, temp, and Grand Theft Auto for a given month in a city to output file
-        //allGtA << "Seattle, WA \n";
         allGtA << "Seattle, WA " << setw(10) << sortedSeaGtA[i].getMonth() << " " << setw(4) << sortedSeaGtA[i].getNumTemp() << " " << setw(4) << sortedSeaGtA[i].getNumGtA() << endl;         // Line adds month, temp, and Grand Theft Auto for a given month in a city to output file
     }
 
@@ -195,17 +194,17 @@ int main()
     allRobbery.open("AllCitiesByRobbery.txt");       // opens file for output of all Robbery data for each city as well as temperature
     for (int i = 0; i < 12; i++)
     {
-        //allRobbery << "Austin, TX \n";
+        
         allRobbery << "Austin, TX " << setw(10) << sortAusRob[i].getMonth() << " " << setw(4) << sortAusRob[i].getNumTemp() << " " << setw(4) << sortAusRob[i].getNumRobbery() << " ";         // Line adds month, temp, and Robberies for a given month in a city to output file
-        //allRobbery << "Boulder, CO \n";
+        
         allRobbery << "Boulder, CO " << setw(10) << sortedBouldRob[i].getMonth() << " " << setw(4) << sortedBouldRob[i].getNumTemp() << " " << setw(4) << sortedBouldRob[i].getNumRobbery() << " ";         // Line adds month, temp, and Robberies for a given month in a city to output file
-        //allRobbery << "Chicago, IL \n";
-        allRobbery << "Chicago, IL " << setw(10) << sortChicRob[i].getMonth() << " " << setw(4) << sortChicRob[i].getNumTemp() << " " << setw(4) << sortChicRob[i].getNumRobbery() << " ";         // Line adds month, temp, and Robberies for a given month in a city to output file
-        //allRobbery << "NewYork, NY \n";
+        
+        allRobbery << "Chicago, IL " << setw(10) << sortedChicagoRob[i].getMonth() << " " << setw(4) << sortedChicagoRob[i].getNumTemp() << " " << setw(4) << sortedChicagoRob[i].getNumRobbery() << " ";         // Line adds month, temp, and Robberies for a given month in a city to output file
+        
         allRobbery << "NewYork, NY " << setw(10) << sortedNewYorkRob[i].getMonth() << " " << setw(4) << sortedNewYorkRob[i].getNumTemp() << " " << setw(4) << sortedNewYorkRob[i].getNumRobbery() << " ";         // Line adds month, temp, and Robberies for a given month in a city to output file
-        //allRobbery << "Sacramento, CA \n";
+        
         allRobbery << "Sacramento, CA " << setw(10) << sortedSacRob[i].getMonth() << " " << setw(4) << sortedSacRob[i].getNumTemp() << " " << setw(4) << sortedSacRob[i].getNumRobbery() << " ";         // Line adds month, temp, and Robberies for a given month in a city to output file
-        //allRobbery << "Seattle, WA \n";
+        
         allRobbery << "Seattle, WA " << setw(10) << sortedSeaRob[i].getMonth() << " " << setw(4) << sortedSeaRob[i].getNumTemp() << " " << setw(4) << sortedSeaRob[i].getNumRobbery() << endl;         // Line adds month, temp, and Robberies for a given month in a city to output file
     }
     cout << endl;
@@ -214,17 +213,17 @@ int main()
     allTheft.open("AllCitiesByTheft.txt");       // opens file for output of all Theft data for each city as well as temperature
     for (int i = 0; i < 12; i++)
     {
-        //allTheft << "Austin, TX \n";
+        
         allTheft << "Austin, TX " << setw(10) << sortAusThef[i].getMonth() << " " << setw(4) << sortAusThef[i].getNumTemp() << " " << setw(4) << sortAusThef[i].getNumTheft() << " ";         // Line adds month, temp, and Theft for a given month in a city to output file
-        //allTheft << "Boulder, CO \n";
+        
         allTheft << "Boulder, CO " << setw(10) << sortedBouldMur[i].getMonth() << " " << setw(4) << sortedBouldMur[i].getNumTemp() << " " << setw(4) << sortedBouldMur[i].getNumTheft() << " " ;         // Line adds month, temp, and Theft for a given month in a city to output file
-        //allTheft << "Chicago, IL \n";
+        
         allTheft << "Chicago, IL " << setw(10) << sortedChicMur[i].getMonth() << " " << setw(4) << sortedChicMur[i].getNumTemp() << " " << setw(4) << sortedChicMur[i].getNumTheft() << " ";         // Line adds month, temp, and Theft for a given month in a city to output file
-        //allTheft << "NewYork, NY \n";
+        
         allTheft << "NewYork, NY " << setw(10) << sortedNewYorkMur[i].getMonth() << " " << setw(4) << sortedNewYorkMur[i].getNumTemp() << " " << setw(4) << sortedNewYorkMur[i].getNumTheft() << " ";         // Line adds month, temp, and Theft for a given month in a city to output file
-        //allTheft << "Sacramento, CA \n";
+        
         allTheft << "Sacramento, CA " << setw(10) << sortedSacMur[i].getMonth() << " " << setw(4) << sortedSacMur[i].getNumTemp() << " " << setw(4) << sortedSacMur[i].getNumTheft() << " ";         // Line adds month, temp, and Theft for a given month in a city to output file
-        //allTheft << "Seattle, WA \n";
+        
         allTheft << "Seattle, WA " << setw(10) << sortedSeatacMur[i].getMonth() << " " << setw(4) << sortedSeatacMur[i].getNumTemp() << " " << setw(4) << sortedSeatacMur[i].getNumTheft() << endl;         // Line adds month, temp, and Theft for a given month in a city to output file
     }
    

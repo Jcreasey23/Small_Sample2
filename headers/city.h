@@ -8,13 +8,13 @@ using namespace std;
 
 class City{
     private:
-    string cityName; //name of city being observed
-    int avgTemp; //Average temperature of the city in a given month
-    int numRobbery; //robberies in a given month
-    int numGtA; //grand theft auto cases in a given month
-    int numMurder; //murder cases in a given month
-    int numTheft; //theft cases in a given month
-    string month; // month of year
+        string cityName; //name of city being observed
+        int avgTemp; //Average temperature of the city in a given month
+        int numRobbery; //robberies in a given month
+        int numGtA; //grand theft auto cases in a given month
+        int numMurder; //murder cases in a given month
+        int numTheft; //theft cases in a given month
+        string month; // month of year
     
     public:
         City(); 
@@ -31,4 +31,3 @@ class City{
 };
 #endif
 
-//do we need attributes for month or year?
