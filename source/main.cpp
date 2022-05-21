@@ -203,17 +203,17 @@ int main()
     for (int i = 0; i < 12; i++)
     {
         //allRobbery << "Austin, TX \n";
-        allRobbery << sortAusRob[i].getMonth() << " " << sortAusRob[i].getNumTemp() << " " << sortAusRob[i].getNumRobbery() << " ";
+        allRobbery << "Austin, TX " << setw(10) << sortAusRob[i].getMonth() << " " << setw(4) << sortAusRob[i].getNumTemp() << " " << setw(4) << sortAusRob[i].getNumRobbery() << " ";
         //allRobbery << "Boulder, CO \n";
-        allRobbery << sortedBouldRob[i].getMonth() << " " << sortedBouldRob[i].getNumTemp() << " " << sortedBouldRob[i].getNumRobbery() << " ";
+        allRobbery << "Boulder, CO " << setw(10) << sortedBouldRob[i].getMonth() << " " << setw(4) << sortedBouldRob[i].getNumTemp() << " " << setw(4) << sortedBouldRob[i].getNumRobbery() << " ";
         //allRobbery << "Chicago, IL \n";
-        allRobbery << sortChicRob[i].getMonth() << " " << sortChicRob[i].getNumTemp() << " " << sortChicRob[i].getNumRobbery() << " ";
+        allRobbery << "Chicago, IL " << setw(10) << sortChicRob[i].getMonth() << " " << setw(4) << sortChicRob[i].getNumTemp() << " " << setw(4) << sortChicRob[i].getNumRobbery() << " ";
         //allRobbery << "NewYork, NY \n";
-        allRobbery << sortedNewYorkRob[i].getMonth() << " " << sortedNewYorkRob[i].getNumTemp() << " " << sortedNewYorkRob[i].getNumRobbery() << " ";
+        allRobbery << "NewYork, NY " << setw(10) << sortedNewYorkRob[i].getMonth() << " " << setw(4) << sortedNewYorkRob[i].getNumTemp() << " " << setw(4) << sortedNewYorkRob[i].getNumRobbery() << " ";
         //allRobbery << "Sacramento, CA \n";
-        allRobbery << sortedSacRob[i].getMonth() << " " << sortedSacRob[i].getNumTemp() << " " << sortedSacRob[i].getNumRobbery() << " ";
+        allRobbery << "Sacramento, CA " << setw(10) << sortedSacRob[i].getMonth() << " " << setw(4) << sortedSacRob[i].getNumTemp() << " " << setw(4) << sortedSacRob[i].getNumRobbery() << " ";
         //allRobbery << "Seattle, WA \n";
-        allRobbery << sortedSeaRob[i].getMonth() << " " << sortedSeaRob[i].getNumTemp() << " " << sortedSeaRob[i].getNumRobbery() << endl;
+        allRobbery << "Seattle, WA " << setw(10) << sortedSeaRob[i].getMonth() << " " << setw(4) << sortedSeaRob[i].getNumTemp() << " " << setw(4) << sortedSeaRob[i].getNumRobbery() << endl;
     }
     cout << endl;
     ofstream allTheft;
@@ -221,17 +221,17 @@ int main()
     for (int i = 0; i < 12; i++)
     {
         //allTheft << "Austin, TX \n";
-        allTheft << sortAusThef[i].getMonth() << " " << sortAusThef[i].getNumTemp() << " " << sortAusThef[i].getNumTheft() << " ";
+        allTheft << "Austin, TX " << setw(10) << sortAusThef[i].getMonth() << " " << setw(4) << sortAusThef[i].getNumTemp() << " " << setw(4) << sortAusThef[i].getNumTheft() << " ";
         //allTheft << "Boulder, CO \n";
-        allTheft << sortedBouldMur[i].getMonth() << " " << sortedBouldMur[i].getNumTemp() << " " << sortedBouldMur[i].getNumTheft() << " " ;
+        allTheft << "Boulder, CO " << setw(10) << sortedBouldMur[i].getMonth() << " " << setw(4) << sortedBouldMur[i].getNumTemp() << " " << setw(4) << sortedBouldMur[i].getNumTheft() << " " ;
         //allTheft << "Chicago, IL \n";
-        allTheft << sortedChicMur[i].getMonth() << " " << sortedChicMur[i].getNumTemp() << " " << sortedChicMur[i].getNumTheft() << " ";
+        allTheft << "Chicago, IL " << setw(10) << sortedChicMur[i].getMonth() << " " << setw(4) << sortedChicMur[i].getNumTemp() << " " << setw(4) << sortedChicMur[i].getNumTheft() << " ";
         //allTheft << "NewYork, NY \n";
-        allTheft << sortedNewYorkMur[i].getMonth() << " " << sortedNewYorkMur[i].getNumTemp() << " " << sortedNewYorkMur[i].getNumTheft() << " ";
+        allTheft << "NewYork, NY " << setw(10) << sortedNewYorkMur[i].getMonth() << " " << setw(4) << sortedNewYorkMur[i].getNumTemp() << " " << setw(4) << sortedNewYorkMur[i].getNumTheft() << " ";
         //allTheft << "Sacramento, CA \n";
-        allTheft << sortedSacMur[i].getMonth() << " " << sortedSacMur[i].getNumTemp() << " " << sortedSacMur[i].getNumTheft() << " ";
+        allTheft << "Sacramento, CA " << setw(10) << sortedSacMur[i].getMonth() << " " << setw(4) << sortedSacMur[i].getNumTemp() << " " << setw(4) << sortedSacMur[i].getNumTheft() << " ";
         //allTheft << "Seattle, WA \n";
-        allTheft << sortedSeatacMur[i].getMonth() << " " << sortedSeatacMur[i].getNumTemp() << " " << sortedSeatacMur[i].getNumTheft() << endl;
+        allTheft << "Seattle, WA " << setw(10) << sortedSeatacMur[i].getMonth() << " " << setw(4) << sortedSeatacMur[i].getNumTemp() << " " << setw(4) << sortedSeatacMur[i].getNumTheft() << endl;
     }
    
    //add a cout statement?
