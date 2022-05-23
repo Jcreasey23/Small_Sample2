@@ -2,6 +2,9 @@
 // Josh Creasey, Tianna Mitzel, Angel Ainembabazi
 // The Effects of Weather on Crime in Major Cities
 
+// Good Job! The code works pretty well.
+// Qian commented
+
 #include <iostream>
 #include <vector>
 #include <string>
